@@ -1,0 +1,5 @@
+Destroyd num with val 5
+5
+Destroyd num with val 5
+10
+Destroyd num with val 10

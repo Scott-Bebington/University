@@ -1,0 +1,7 @@
+Make a new object
+Make a copy of that object
+Delete the initial object
+Display something from the copied object
+Delete the copied object
+
+If it is not a deep copy it should seg fault or double free

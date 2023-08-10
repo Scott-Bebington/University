@@ -1,0 +1,171 @@
+    //     if (dep == 1)
+    //     {
+    //         Disk<T> *node = t1->top(); // stores the node to be moved
+    //         t1->pop();                 // removes the node from tower 1
+    //         if (dest == 1)
+    //         {
+    //             // cout << "Test 2" << endl;
+    //             throw Exception<T>::incorrectDiskMove(dep, dest);
+    //         }
+    //         if (dest == 2)
+    //         {
+    //             if (t1->empty() && t2->empty())
+    //             {
+    //                 // cout << "Test 1" << endl;
+    //                 throw Exception<T>::emptyStack(dep);
+    //             }
+    //             if (t2->empty())
+    //             {
+    //                 t2->push(node);
+    //                 Exception<T>::movePlan(node, dep, dest);
+    //                 return;
+    //             }
+    //             Disk<T> *testnode = t2->top();
+    //             if (node->getLabel() > testnode->getLabel())
+    //             {
+    //                 // cout << "Test 3" << endl;
+    //                 throw Exception<T>::incorrectDiskMove(dep, dest);
+    //             }
+    //             t2->push(node);
+    //             Exception<T>::movePlan(node, dep, dest);
+    //             return;
+    //         }
+    //         if (dest == 3)
+    //         {
+    //             if (t1->empty() && t3->empty())
+    //             {
+    //                 // cout << "Test 1" << endl;
+    //                 throw Exception<T>::emptyStack(dep);
+    //             }
+    //             if (t3->empty())
+    //             {
+    //                 t3->push(node);
+    //                 Exception<T>::movePlan(node, dep, dest);
+    //                 return;
+    //             }
+    //             Disk<T> *testnode = t3->top();
+    //             if (node->getLabel() > testnode->getLabel())
+    //             {
+    //                 // cout << "Test 4" << endl;
+    //                 throw Exception<T>::incorrectDiskMove(dep, dest);
+    //             }
+    //             t3->push(node);
+    //             Exception<T>::movePlan(node, dep, dest);
+    //             return;
+    //         }
+    //     }
+    //     if (dep == 2)
+    //     {
+    //         Disk<T> *node = t2->top(); // stores the node to be moved
+    //         t2->pop();                 // removes the node from tower 1
+
+    //         if (dest == 1)
+    //         {
+    //             if (t2->empty() && t1->empty())
+    //             {
+    //                 // cout << "Test 1" << endl;
+    //                 throw Exception<T>::emptyStack(dep);
+    //             }
+    //             if (t1->empty())
+    //             {
+
+    //                 t1->push(node);
+    //                 Exception<T>::movePlan(node, dep, dest);
+    //                 return;
+    //             }
+    //             Disk<T> *testnode = t1->top();
+    //             if (node->getLabel() > testnode->getLabel())
+    //             {
+    //                 // cout << "Test 6" << endl;
+    //                 throw Exception<T>::incorrectDiskMove(dep, dest);
+    //             }
+    //             t1->push(node);
+    //             Exception<T>::movePlan(node, dep, dest);
+    //             return;
+    //         }
+    //         if (dest == 2)
+    //         {
+    //             // cout << "Test 7" << endl;
+    //             throw Exception<T>::incorrectDiskMove(dep, dest);
+    //         }
+    //         if (dest == 3)
+    //         {
+    //             if (t2->empty() && t3->empty())
+    //             {
+    //                 // cout << "Test 1" << endl;
+    //                 throw Exception<T>::emptyStack(dep);
+    //             }
+    //             if (t3->empty())
+    //             {
+    //                 t3->push(node);
+    //                 Exception<T>::movePlan(node, dep, dest);
+    //                 return;
+    //             }
+    //             Disk<T> *testnode = t3->top();
+    //             if (node->getLabel() > testnode->getLabel())
+    //             {
+    //                 // cout << "Test 8" << endl;
+    //                 throw Exception<T>::incorrectDiskMove(dep, dest);
+    //             }
+    //             t3->push(node);
+    //             Exception<T>::movePlan(node, dep, dest);
+    //             return;
+    //         }
+    //     }
+    //     if (dep == 3)
+    //     {
+    //         Disk<T> *node = t3->top(); // stores the node to be moved
+    //         t3->pop();                 // removes the node from tower 1
+
+    //         if (dest == 1)
+    //         {
+    //             if (t3->empty() && t1->empty())
+    //             {
+    //                 // cout << "Test 1" << endl;
+    //                 throw Exception<T>::emptyStack(dep);
+    //             }
+    //             if (t1->empty())
+    //             {
+    //                 t1->push(node);
+    //                 Exception<T>::movePlan(node, dep, dest);
+    //                 return;
+    //             }
+    //             Disk<T> *testnode = t1->top();
+    //             if (node->getLabel() > testnode->getLabel())
+    //             {
+    //                 // cout << "Test 10" << endl;
+    //                 throw Exception<T>::incorrectDiskMove(dep, dest);
+    //             }
+    //             t1->push(node);
+    //             Exception<T>::movePlan(node, dep, dest);
+    //             return;
+    //         }
+    //         if (dest == 2)
+    //         {
+    //             if (t3->empty() && t2->empty())
+    //             {
+    //                 // cout << "Test 1" << endl;
+    //                 throw Exception<T>::emptyStack(dep);
+    //             }
+    //             if (t2->empty())
+    //             {
+    //                 t2->push(node);
+    //                 Exception<T>::movePlan(node, dep, dest);
+    //                 return;
+    //             }
+    //             Disk<T> *testnode = t2->top();
+    //             if (node->getLabel() > testnode->getLabel())
+    //             {
+    //                 // cout << "Test 11" << endl;
+    //                 throw Exception<T>::incorrectDiskMove(dep, dest);
+    //             }
+    //             t2->push(node);
+    //             Exception<T>::movePlan(node, dep, dest);
+    //             return;
+    //         }
+    //         if (dest == 1)
+    //         {
+    //             // cout << "Test 12" << endl;
+    //             throw Exception<T>::incorrectDiskMove(dep, dest);
+    //         }
+    //     }

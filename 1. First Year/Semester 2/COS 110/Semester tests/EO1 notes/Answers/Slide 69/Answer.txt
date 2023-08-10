@@ -1,0 +1,4 @@
+When working with pointer use * to get to the value at the address
+When working with non dynamic memory use & to get to the memory address
+
+ptr-> is equavalent to (*ptr). 
