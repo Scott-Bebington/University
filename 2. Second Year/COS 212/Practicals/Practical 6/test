@@ -1,0 +1,25 @@
+public void insertVertex(String name) 
+    {
+        if(name.isEmpty() || name == null)
+            return;
+        numVertices++;
+        String[] tempVertices = new String[numVertices];
+        for(int i = 0; i < numVertices - 1; i++)
+        {
+            tempVertices[i] = vertices[i];
+        }
+        tempVertices[numVertices - 1] = name;
+        vertices = tempVertices;
+        Integer[][] tempAdjacencyMatrix = new Integer[numVertices][numVertices];
+        for(int i = 0; i < numVertices; i++)
+        {
+            for(int j = 0; j < numVertices; j++)
+            {
+                if(i < numVertices - 1 && j < numVertices - 1)
+                    tempAdjacencyMatrix[i][j] = adjacencyMatrix[i][j];
+                else
+                    tempAdjacencyMatrix[i][j] = 0;
+            }
+        }
+        adjacencyMatrix = tempAdjacencyMatrix;
+    }
