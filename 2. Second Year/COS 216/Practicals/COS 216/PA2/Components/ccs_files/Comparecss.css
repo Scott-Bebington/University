@@ -1,0 +1,120 @@
+/* Author: Scott Bebington
+Student Number: u21546216 */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: URL(../Backgrounds/Background2.jpg);
+    background-size: 50% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+td {
+    outline: 1px solid black;
+    width: 20vw;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.Nav {
+    width: 100%;
+    height: 8%;
+    background-color: #ccc;
+}
+
+.inNav {
+    width: 97%;
+    height: 8%;
+    background-color: #ccc;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NavSpacing {
+    margin-left: 7%;
+    margin-right: 7%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullscreen {
+    height: 92%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 8%;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.cars {
+    width: 85%;
+    height: auto;
+    margin-top: 2.5%;
+    margin-left: 7.5%;
+    margin-bottom: 2.5%;
+    background-color: #ccc;
+    overflow-y: scroll;
+    /* background-color: black; */
+    background-size: 100% 100%;
+    border-radius: 10px;
+    font-size: 2.2vh;
+    /* display: flex; */
+}
+
+.dropdown 
+{
+    height: 25%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2.2vh;
+    background-color: #ccc;
+}
+
+.tablewidth {
+    width: 50vw;
+    padding: 2%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: 30vh;
+    width: 25vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    /* outline: solid gold; */
+    background-color: black;
+    /* background-image: URL("https://wheatley.cs.up.ac.za/api/images/models/bugatti_chiron.jpg"); */
+    background-size: cover;
+}
+
+.cars::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.cars::-webkit-scrollbar-track {
+    background: black;
+}
+
+.cars::-webkit-scrollbar-thumb {
+    background: white;
+}

@@ -1,0 +1,103 @@
+/* Author: Scott Bebington
+Student Number: u21546216 */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: URL(../Backgrounds/Background2.jpg);
+    background-size: 50% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    outline: 1px solid black;
+    width: 15vw;
+}
+
+.Nav {
+    width: 100%;
+    height: 8%;
+    background-color: #ccc;
+}
+
+.inNav {
+    width: 97%;
+    height: 8%;
+    background-color: #ccc;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NavSpacing {
+    margin-left: 7%;
+    margin-right: 7%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullscreen {
+    height: 92%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 8%;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.cars {
+    width: 85%;
+    height: auto;
+    margin-top: 2.5%;
+    margin-left: 7.5%;
+    margin-bottom: 2.5%;
+    background-color: #ccc;
+    overflow-y: scroll;
+    background-image: URL(../Backgrounds/compare_background.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    font-size: 2.2vh;
+}
+
+.dropdown {
+    height: 17.5%;
+    width: 30%;
+}
+
+.tablewidth {
+    width: 50vw;
+    padding: 2%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: 27.5vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+
+}
+
+.cars::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.cars::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cars::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}

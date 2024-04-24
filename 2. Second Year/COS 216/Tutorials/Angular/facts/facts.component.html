@@ -1,0 +1,15 @@
+<h1>Thing</h1>
+
+<button (click)="getRandom()">Get some pieces of knowledge</button>
+
+<br>
+<input [(ngModel)] = "numFacts">
+
+<div *ngFor="let f of facts" class="factCon">
+
+	<div class="fact">
+		<h3>ID: {{f.id}}</h3>
+		<p>"{{f.text}}"</p>
+		<p>Source: {{f.source}}</p>
+	</div>
+</div>

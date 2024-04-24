@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS 216 Practicals</title>
+    <link rel="stylesheet" type="text/css" href="./Components/ccs files/FindCarcss.css">
+
+</head>
+
+<body>
+    <!-- Author: Scott Bebington
+    Student Number: u21546216 -->
+    <nav class="Nav">
+        <nav class="inNav">
+            <div>
+                <a href="../../index.html">
+                    <img style="height: 100%" src="./Components/Logos/Other_Logo.png">
+                </a>
+            </div>
+            <ul>
+                <a style="text-decoration: none; color: black;" href="./Index.html">Cars</a>
+            </ul>
+            <ul>
+                <a style="text-decoration: underline; color: black;" href="./FindCar.html"><b>Find
+                    Car</b></a>
+            </ul>
+            <ul>
+                <a style="text-decoration: none; color: black;" href="./Brands.html">Brands</a>
+            </ul>
+
+            <ul>
+                <a style="text-decoration: none; color: black;" href="./Compare.html">Compare</a>
+            </ul>
+        </nav>
+    </nav>
+    <div class="fullscreen">
+        <div class="filters">
+            <div class="heading">
+                <h1>
+                    Search By...
+                </h1>
+            </div>
+            <div class="nonoptional">
+                <div class="splittop">
+                    <div class="FilterSize">
+                        <b>New / Used</b>
+                        <table>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    New Cars
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="New" name="agree" value="New">
+                                </td>
+                            </tr>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Used Cars
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Used" name="agree" value="Used">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="FilterSize">
+                        <b>
+                            Fuel Type
+                        </b>
+                        <table>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Petrol
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Petrol" name="agree" value="Petrol">
+                                </td>
+                            </tr>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Diesel
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Diesel" name="agree" value="Diesel">
+                                </td>
+                            </tr>
+        
+                        </table>
+                    </div>
+                </div>
+                <div class="splittop">
+                    <div class="FilterSize">
+                        <b>
+                            Transmission Type
+                        </b>
+                        <table>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Manual
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Manual" name="agree" value="Manual">
+                                </td>
+                            </tr>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Automatic
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Auto" name="agree" value="Automatic">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="FilterSize">
+                        <b>
+                            Number of seats
+                        </b>
+                        <table>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Two
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Manual" name="agree" value="Manual">
+                                </td>
+                            </tr>
+                            <tr class="rows">
+                                <td class="filterSpacing">
+                                    Four
+                                </td>
+                                <td>
+                                    <input class="Checkbox" type="checkbox" id="Auto" name="agree" value="Automatic">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="heading" style="border-top: solid black;">
+                <h1>
+                    Optional
+                </h1>
+            </div>
+            <div class="optional">
+                <div class="splitbottom">
+                    <div class="FilterSizebottom">
+                        <b>
+                            Colour
+                        </b>
+                        <select class="dropdown" id="colors" name="colors">
+                            <option value="None">---</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="orange">Orange</option>
+                            <option value="red">Red</option>
+                            <option value="white">White</option>
+                            <option value="Gray">Grey</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="splitbottom">
+
+                    <div class="FilterSizebottom">
+                        <b>
+                            Body Type
+                        </b>
+                        <select class="dropdown" id="body type" name="body type">
+                            <option value="None">---</option>
+                            <option value="blue">Coupé</option>
+                            <option value="green">Berlinetta</option>
+                            <option value="orange">Estate / Wagon</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <button class="button">
+                    Apply Filters
+                </button>
+            </div>
+        </div>
+        <div class="noFlex">
+            <div class="Cars"
+            style="background-image: URL(./Components/CarPhotos/Bugatti\ image.jpg)">
+            <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2022 Bugatti Chiron Pur Sport
+                    </h1>
+                </div>
+            </div>
+            <div class="Cars"
+            style="background-image: URL(./Components/CarPhotos/Lamborghini\ image.jpg)">
+            <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2019 Lamborghini Aventador SVJ
+                    </h1>
+                </div>
+            </div>
+            <div class="Cars"
+            style="background-image: url(./Components/CarPhotos/BMWimage.jpg)">
+            <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2022 BMW M3 Competition M Xdrive
+                    </h1>
+                </div>
+            </div>
+            <div class="Cars"
+            style="background-image: url(./Components/CarPhotos/Audi\ image.jpg)">
+            <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2023 Audi RS6 Quattro
+                    </h1>
+                </div>
+            </div>
+            <div class="Cars"
+            style="background-image: url(./Components/CarPhotos/Ford\ image.jpg)">
+            <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2022 Ford GT
+                    </h1>
+                </div>
+            </div>
+            <div class="Cars"
+            style="background-image: url(./Components/CarPhotos/Ferrari\ image.jpeg)">
+            <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2019 Ferrari 812 Superfast
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

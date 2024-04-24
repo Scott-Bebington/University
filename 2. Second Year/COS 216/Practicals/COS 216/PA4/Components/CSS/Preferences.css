@@ -1,0 +1,150 @@
+/* Author: Scott Bebington
+Student Number: u21546216 */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: URL(../Backgrounds/Background2.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    border-bottom: solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Nav {
+    width: 100%;
+    height: 8%;
+    background-color: #ccc;
+}
+
+.inNav {
+    width: 97%;
+    height: 8%;
+    background-color: #ccc;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullscreen {
+    height: 92%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 8%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.NavSpacing {
+    margin-left: 7%;
+    margin-right: 7%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 80%;
+    background-color: #ccc;
+    /* margin: 1.5%; */
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding-top: 1%; */
+}
+
+.FilterSize {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2vh;
+    height: 30%;
+    width: 80%;
+}
+
+.dropdown 
+{
+    height: 80%;
+    width: 65%;
+    border-radius: 10px;
+    font-size: 2.2vh;
+    background-color: #ccc;
+}
+
+.dropdownSort 
+{
+    height: 80%;
+    width: 65%;
+    border-radius: 10px;
+    font-size: 2.2vh;
+    background-color: #ccc;
+}
+
+.filterSpacing {
+    width: 8vw;
+}
+
+.Checkbox {
+    width: 2vh;
+    height: 2vw;
+    border-radius: 10px;
+}
+
+.circular-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.circular-checkbox .checkmark {
+    display: inline-block;
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 50%;
+    border: 2px solid purple;
+}
+
+.circular-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: purple;
+    border-color: purple;
+}
+
+.active {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.inactive {
+    text-decoration: none;
+    color: black;
+}
+
+.Button {
+    height: 5vh;
+    width: 5.75vw;
+    font-size: 1.75vh;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    background-color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Table {
+    height: 80%;
+    width: 80%;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS 216 Homework Assignment</title>
+    <link rel="stylesheet" type="text/css" href="./Components/CSS Files/ReadyUp.css">
+</head>
+
+<body>
+    <!-- Author: Scott Bebington
+    Student Number: u21546216 -->
+    <div class="Container">
+        <div class="Username">
+            <div class="Title">
+                Are you ready?
+            </div>
+            <div class="ReadyContainer">
+                <div class="Users">
+                    <h2 id="Username">
+                        User 1
+                    </h2>
+                    <button class="Button" onclick="connect()" id="ReadyUp">
+                        Ready Up
+                    </button>
+                </div>
+                <div class="Users">
+                    <h2 id="Waiting">
+                        Connect to the game
+                    </h2>
+                    <button class="Button" onclick="ConnectToGame()" id="Connection">
+                        Disconnected
+                    </button>
+                </div>
+            </div>
+            <div class="PortInputContainer">
+                <input class="PortInput" id="PortInput" placeholder="Enter a port number">
+                <button class="Button2" id="PortCheckButton" onclick="CheckPort()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="./Components/JS Files/ReadyUp.js"></script>
+    <script>
+
+        var socket;
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const username = urlParams.get("username");
+        document.getElementById('Username').innerHTML = username;
+
+
+        function connect() 
+        {
+            document.getElementById('ReadyUp').innerHTML = 'Ready Up';
+            //Connection code
+
+            try //Attempt to disconnect before reconnect, otherwise multiple sockets open
+            {
+                socket.close();
+            }
+            catch (e) 
+            {
+                console.log("Socket not open, dont stress");
+            }
+
+            socket = new WebSocket('ws://localhost:' + portNumber);
+
+            socket.onopen = openSocket;
+            socket.onmessage = socketMessage;
+            socket.onclose = closeSocket;
+
+        }
+
+        //When the socket connects
+        function openSocket(ev) 
+        {
+            document.getElementById('ReadyUp').innerHTML = 'Ready';
+            document.getElementById("ReadyUp").style.outline = 'green solid 2px';
+        }
+
+        //When the socket disconnects
+        function closeSocket(ev) 
+        {
+            alert("Server for port number: " + portNumber + " is not open\nplease choose another port number");
+            document.getElementById('ReadyUp').innerHTML = 'Ready Up';
+            document.getElementById('Connection').innerHTML = 'Disconnected';
+            document.getElementById("ReadyUp").style.outline = 'rgb(255, 65, 65) solid 2px';
+            document.getElementById("Connection").style.outline = 'rgb(255, 65, 65) solid 2px';
+            PortCheckButton.style.outline = "rgb(255, 65, 65) solid";
+            PortInput.value = "";
+        }
+
+        //When a message is received from the socket
+        function socketMessage(ev) 
+        {
+            let DecodedData = JSON.parse(ev.data);
+            console.log(DecodedData.type);
+            if (DecodedData.type == "GoToGame") 
+            {
+                console.log("Going to game");
+                window.location.href = "Game.html?username=" + encodeURIComponent(username) + "&portNumber=" + encodeURIComponent(portNumber);
+            } 
+        }
+
+        function ConnectToGame()
+        {
+            document.getElementById('Connection').innerHTML = 'Connected';
+            document.getElementById("Connection").style.outline = 'green solid 2px';
+            let sendData = 
+            {
+                "type": "Ready",
+                "data": "none"
+            }
+            var jsonData = JSON.stringify(sendData);
+            socket.send(jsonData);
+        }
+
+    </script>
+</body>
+
+</html>

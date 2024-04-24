@@ -1,0 +1,37 @@
+<script> // Question 5
+    var name;
+    var brand;
+    var speedKMH;
+
+    var Car = function(name, brand, speedKMH) 
+    {
+        this.name = name;
+        this.brand = brand;
+        this.speedKMH = speedKMH;
+    };
+
+    Car.prototype.clone = function () 
+    {
+        return new Car(this.name, this.brand, this.speedKMH);
+    };
+
+    Car.prototype.convertToMPH = function() 
+    {
+        let speedMPH = this.speedKMH / 1.609344;
+        return speedMPH;
+    };
+
+</script>
+
+<?php 
+echo "<table>";
+for ($i = 0; $i < $numcars; $i++) 
+{
+  echo "<tr>";
+  echo "<th>" . $carnames[$i] . "</th>";
+  echo "<td>" . $carbrands[$i] . "</td>";
+  echo "<td>" . $carprices[$i] . "</td>";
+  echo "</tr>";
+}
+echo "</table>";
+?>

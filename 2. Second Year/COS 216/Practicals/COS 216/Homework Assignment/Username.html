@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS 216 Homework Assignment</title>
+    <link rel="stylesheet" type="text/css" href="./Components/CSS Files/Username.css">
+</head>
+
+<body>
+    <!-- Author: Scott Bebington
+    Student Number: u21546216 -->
+    <div class="Container">
+        <div class="Username">
+            <div class="Title">
+                Enter Username
+            </div>
+            <div class="Inputs">
+                <input class="UsernameInput">
+            </div>
+            <div class="Requirements" id="Requirements">
+                <p style="text-decoration: underline;">Requirements</p>
+                <li>Must be between 5 and 20 characters</li>
+                <li>Must contain at least 1 upper-case letter</li>
+                <li>Must contain at least 1 lower-case letter</li>
+                <li>Must contain at least 1 number</li>
+            </div>
+            <div class="ButtonsContainer">
+                <button id="Submit" onclick="ConnectUser()">Submit</button>
+                <button id="Generate" onclick="generateRandomUsername()">Generate Username</button>
+            </div>
+        </div>
+    </div>
+    <script src="./Components/JS Files/Username.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS 216 Homework Assignment</title>
+    <link rel="stylesheet" type="text/css" href="./Components/CSS Files/Game.css">
+</head>
+
+<body onload="Countdown()">
+    <!-- Author: Scott Bebington
+    Student Number: u21546216 -->
+    <div class="Container">
+        <div class="User">
+            <div class="UserUsername">
+                <span id="username">Waiting</span>
+            </div>
+            <div class="Score">
+                <h1 id="MyScore">
+                    Score: 0
+                </h1>
+                <h3 class="MyBrand">
+                    Brand 1: Incomplete
+                </h3>
+                <h3 class="MyBrand">
+                    Brand 2: Incomplete
+                </h3>
+                <h3 class="MyBrand">
+                    Brand 3: Incomplete
+                </h3>
+                <h3 class="MyBrand">
+                    Brand 4: Incomplete
+                </h3>
+                <h3 class="MyBrand">
+                    Brand 5: Incomplete
+                </h3>
+            </div>
+        </div>
+        <div class="Username">
+            <!-- <div id="Test">
+                <img src="./Components/Images/Countdown.gif">
+            </div> -->
+            <div class="Screen" id="Screen">
+                <div class="StartingText" id="StartText">
+                    Game Is Starting In...
+                </div>
+                <div class="Timer" id="Timer">
+                    <div id="Test">
+                        <img src="./Components/Images/Countdown.gif" class="Countdown">
+                    </div>
+                    <div class="ImageContainer" id="BrandImage">
+
+                    </div>
+                    <div class="InputContainer">
+                        <div class="Time2" id="app"></div>
+                        <div class="Outline">
+                            <input class="Input" id="BrandInput">
+                            <button class="Button" onclick="CheckBrand()" id="Submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Opponent">
+            <div class="UserUsername">
+                <span id="Opusername">Waiting</span>
+            </div>
+            <div class="Score">
+                <h1 id="OpScore">
+                    Score: 0
+                </h1>
+                <h3 class="OpBrand">
+                    Brand 1: Incomplete
+                </h3>
+                <h3 class="OpBrand">
+                    Brand 2: Incomplete
+                </h3>
+                <h3 class="OpBrand">
+                    Brand 3: Incomplete
+                </h3>
+                <h3 class="OpBrand">
+                    Brand 4: Incomplete
+                </h3>
+                <h3 class="OpBrand">
+                    Brand 5: Incomplete
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="./Components/JS Files/Game.js"></script>
+    <script>
+
+        connect();
+        function connect() {
+            // document.getElementById('ReadyUp').innerHTML = 'Ready Up';
+            //Connection code
+
+            try //Attempt to disconnect before reconnect, otherwise multiple sockets open
+            {
+                socket.close();
+            }
+            catch (e) {
+                console.log("Socket not open, dont stress");
+            }
+
+            socket = new WebSocket('ws://localhost:' + portNumber);
+
+            socket.onopen = openSocket;
+            socket.onmessage = socketMessage;
+            socket.onclose = closeSocket;
+
+            // GetRandomNumbers();
+        }
+
+
+        //When the socket connects
+        function openSocket(ev) 
+        {
+            // console.log("USERNAME!!!!! " + username);
+            SetPlayers(username);
+            GetRandomNumbers();
+            GetPlayers();
+        }
+
+        //When the socket disconnects
+        function closeSocket(ev) 
+        {
+            console.log("Socket Closed");
+        }
+
+        //When a message is received from the socket
+        function socketMessage(ev) 
+        {
+            let DecodedData = JSON.parse(ev.data);
+            // console.log("Request type: " + DecodedData.type);
+            if (DecodedData.type == "GetRandomNumbers") 
+            {
+                let test = DecodedData.data
+                for (let index = 0; index < test.length; index++) 
+                {
+                    // console.log("Unique numbers at position [" + index + "]: " + test[index]);
+                    uniqueNumbers[index] = test[index];
+                }
+            }
+            else if (DecodedData.type == "GetPlayers") 
+            {
+                // console.log("Recieved Players")
+                let test = DecodedData.data
+                for (let index = 0; index < test.length; index++) 
+                {
+                    // console.log("User [" + index + "]: " + test[index]);
+                    Users[index] = test[index];
+                }
+                usernameSpan.innerHTML = Users[0];
+                OpusernameSpan.innerHTML = Users[1];
+            }
+            else if(DecodedData.type == "SetCompleteOp")
+            {
+                let count = DecodedData.data;
+                let RunningScore = DecodedData.score;
+                console.log("Op Count: " + DecodedData.data);
+                OpSideBar[count - 1].innerHTML = "Brand " + (count) + ": Complete";
+                OpScore.innerHTML = "Score: " + RunningScore;
+            }
+            else if(DecodedData.type == "SetCompleteMe")
+            {
+                let count = DecodedData.data;
+                let RunningScore = DecodedData.score;
+                console.log("My Count: " + DecodedData.data);
+                SideBar[count - 1].innerHTML = "Brand " + (count) + ": Complete";
+                MyScore.innerHTML = "Score: " + RunningScore;
+            }
+            else if(DecodedData.type == "GameOver")
+            {
+                clearInterval(timerInterval);
+                let myscore = MyScore.innerHTML.substring(7, MyScore.innerHTML.length);
+                let opscore = OpScore.innerHTML.substring(7, OpScore.innerHTML.length);
+                if(myscore > opscore)
+                {
+                    if(Users[0] == username)
+                    {
+                        
+                        console.log("My Score: " + myscore);
+                        GameOver.innerHTML = "Game Over, You Win";
+                    }
+                    else
+                    {
+                        console.log("Op Score: " + opscore);
+                        GameOver.innerHTML = "Game Over, You Lose";
+                    }
+                }
+                else
+                {
+                    if(Users[0] == username)
+                    {
+                        console.log("My Score: " + myscore);
+                        GameOver.innerHTML = "Game Over, You Lose";
+                    }
+                    else
+                    {
+                        console.log("Op Score: " + opscore);
+                        GameOver.innerHTML = "Game Over, You Win";
+                    }
+                }
+                
+                // GameOver.innerHTML = "Game Over";
+                return;
+            }
+            else if(DecodedData.type == "Disconnected")
+            {
+                // GameOver.innerHTML = "Opponent Disconnected!";
+                console.log("Opponent Disconnected");
+            }
+
+        }
+
+        function GetRandomNumbers() 
+        {
+            let sendData = 
+            {
+                "type": "GetRandomNumbers",
+                "data": "none"
+            }
+            var jsonData = JSON.stringify(sendData);
+            socket.send(jsonData);
+        }
+
+        function SetPlayers(Username) 
+        {
+            let sendData = 
+            {
+                "type": "SetPlayers",
+                "data": Username
+            }
+            var jsonData = JSON.stringify(sendData);
+            socket.send(jsonData);
+        }
+
+        function GetPlayers() 
+        {
+            let sendData = 
+            {
+                "type": "GetPlayers",
+                "data": "none"
+            }
+            var jsonData = JSON.stringify(sendData);
+            socket.send(jsonData);
+        }
+    </script>
+</body>
+
+</html>

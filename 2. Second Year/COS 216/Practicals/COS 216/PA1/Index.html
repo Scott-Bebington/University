@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS 216 Practicals</title>
+    <link rel="stylesheet" type="text/css" href="./Components/ccs files/Indexcss.css">
+</head>
+
+<body>
+    <!-- Author: Scott Bebington
+    Student Number: u21546216 -->
+    <nav class="Nav">
+        <nav class="inNav">
+            <div>
+                <a href="../../index.html">
+                    <img alt="Logo" style="height: 100%" src="./Components/Logos/Other_Logo.png">
+                </a>
+            </div>
+            <ul>
+                <li><a style="text-decoration: underline; color: black;" href="./Index.html"><b>Cars</b></a></li>
+            </ul>
+            <ul>
+                <li><a style="text-decoration: none; color: black;" href="./FindCar.html">Find
+                    Car</a></li>
+            </ul>
+            <ul>
+                <li><a style="text-decoration: none; color: black;" href="./Brands.html">Brands</a></li>
+            </ul>
+
+            <ul>
+                <li><a style="text-decoration: none; color: black;" href="./Compare.html">Compare</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="fullscreen">
+        <div class="filters">
+            <div class="FilterSize">
+                <b>New / Used</b>
+                <table>
+                    <tr>
+                        <td class="filterSpacing">
+                            New Cars
+                        </td>
+                        <td>
+                            <input class="Checkbox" type="checkbox" id="New" name="agree" value="New">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="filterSpacing">
+                            Used Cars
+                        </td>
+                        <td>
+                            <input class="Checkbox" type="checkbox" id="Used" name="agree" value="Used">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="FilterSize">
+                <b>Transmission Type</b>
+                <table>
+                    <tr>
+                        <td class="filterSpacing">
+                            Manual
+                        </td>
+                        <td>
+                            <input class="Checkbox" type="checkbox" id="Manual" name="agree" value="Manual">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="filterSpacing">
+                            Automatic
+                        </td>
+                        <td>
+                            <input class="Checkbox" type="checkbox" id="Auto" name="agree" value="Automatic">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="FilterSize">
+                <b>Fuel Type</b>
+                <table>
+                    <tr>
+                        <td class="filterSpacing">
+                            Petrol
+                        </td>
+                        <td>
+                            <input class="Checkbox" type="checkbox" id="Petrol" name="agree" value="Petrol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="filterSpacing">
+                            Diesel
+                        </td>
+                        <td>
+                            <input class="Checkbox" type="checkbox" id="Diesel" name="agree" value="Diesel">
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="FilterSize">
+                <b>Colour</b>
+                <br>
+                <select class="dropdown" id="colors" name="colors">
+                    <option value="None">---</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="orange">Orange</option>
+                    <option value="red">Red</option>
+                    <option value="white">White</option>
+                    <option value="Gray">Grey</option>
+                    <option value="black">Black</option>
+                </select>
+            </div>
+        </div>
+        <div class="noFlex">
+            <div class="sort">
+                <div class="sortspace">
+                    <div>
+                        <input class="searchbar" type="text" id="search" placeholder="Search for a car...">
+                    </div>
+                    <div>
+                        Name
+                        <img alt="Sort Image" class="SortImage" src="./Components/Sort Images/SortImage.jpg">
+                    </div>
+                    <div>
+                        Year
+                        <img alt="Sort Image" class="SortImage" src="./Components/Sort Images/SortImage.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Cars" style="background-image: URL(./Components/CarPhotos/Bugatti\ image.jpg)">
+                <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2022 Bugatti Chiron Pur Sport
+                    </h1>
+                    <h1>
+                        R 54 727 650
+                    </h1>
+                    <h3>
+                        New | Automatic | Petrol | Blue
+                    </h3>
+                </div>
+            </div>
+            <div class="Cars" style="background-image: URL(./Components/CarPhotos/Lamborghini\ image.jpg)">
+                <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2019 Lamborghini Aventador SVJ
+                    </h1>
+                    <h1>
+                        R 9 486 374
+                    </h1>
+                    <h3>
+                        New | Automatic | Petrol | Grey
+                    </h3>
+                </div>
+            </div>
+            <div class="Cars" style="background-image: url(./Components/CarPhotos/BMWimage.jpg)">
+                <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2022 BMW M3 Competition M Xdrive
+                    </h1>
+                    <h1>
+                        R 2 599 000
+                    </h1>
+                    <h3>
+                        Used (300km) | Automatic | Petrol | Green
+                    </h3>
+                </div>
+            </div>
+            <div class="Cars" style="background-image: url(./Components/CarPhotos/Audi\ image.jpg)">
+                <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2023 Audi RS6 Quattro
+                    </h1>
+                    <h1>
+                        R 2 654 950
+                    </h1>
+                    <h3>
+                        New | Automatic | Petrol | Black
+                    </h3>
+                </div>
+            </div>
+            <div class="Cars" style="background-image: url(./Components/CarPhotos/Ford\ image.jpg)">
+                <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2022 Ford GT
+                    </h1>
+                    <h1>
+                        R 9 119 000
+                    </h1>
+                    <h3>
+                        New | Automatic | Petrol | Black
+                    </h3>
+                </div>
+            </div>
+            <div class="Cars" style="background-image: url(./Components/CarPhotos/Ferrari\ image.jpeg)">
+                <div style="margin-left: 2vw;">
+                    <h1 style="padding-top: 1%;">
+                        2019 Ferrari 812 Superfast
+                    </h1>
+                    <h1>
+                        R 6 699 900
+                    </h1>
+                    <h3>
+                        Used (12 000km) | Automatic | Petrol | Red
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
