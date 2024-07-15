@@ -1,0 +1,28 @@
+Steps to set up the LDAP server
+
+1. Make sure vscode is open in wsl
+2. Open the terminal in vscode
+3. Run the following commands
+
+```bash
+$sudo apt-get update
+$sudo apt-get install slapd ldap-utils
+systemctl status slapd
+sudo dpkg-reconfigure slapd
+1. Select No
+2. DNS domain name: za
+3. Organization name: scott
+4. set a password of your choice
+5. confirm the password
+6. Select Yes
+7. Select Yes
+sudo nano /etc/ldap/ldap.conf
+1. Uncomment BASE and URI and set them to the following
+BASE dc=za
+URI ldap://127.0.0.1
+click ctrl + x to exit and y to save
+click enter to exit
+ldapadd -x -D "cn=admin,dc=za" -W -H ldap://127.0.0.1:389 -f start.ldif (This is to add all the data in the start.ldif file to the ldap server)
+
+Optional: ldapsearch -x, this is to test if everything was added correctly
+```

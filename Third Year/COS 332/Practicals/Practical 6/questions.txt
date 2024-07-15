@@ -1,0 +1,36 @@
+?The successor of IPv4 is:
+-TCP
+-Ethernet
+-IPv5
++IPv6
+-None of the above
+?DNS normally uses the following transport layer protocol
+-TCP
++UDP
+-IEEE 802.3
+-All of the above
+-None of the above
+?Layer 6 of ISO/OSI is the . . . layer.
+-Application
+-Datalink
+-Session
++Presentation
+-Physical
+?The ISO OSI session layer is positioned (exactly) between the . . . and . . . layers.
+-Physical, Datalink
++Transport, Presentation
+-Application, Transport
+-Session, Transport
+-None of the above
+?What is the name of ISO layer 2?
+-Physical
++Datalink
+-Network
+-Transport
+-More than one of the above
+?Layers 1 to 4 of the ISO OSI model are known as the
+-Upper layers
+-Lower layers
+-Data layers
+-Physical layers
++None of the above

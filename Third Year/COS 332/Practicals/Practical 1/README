@@ -1,0 +1,40 @@
+# Project Name
+
+COS 332 Practical 1
+
+## Description
+
+This project demonstrates how to calculate the next and previous values of the Fibonacci sequence.
+The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones. In this project, we provide a method to calculate the next and previous values of the Fibonacci sequence based on a given number.
+
+### Usage
+
+To get the next value of the Fibonacci sequence, use the following code:
+
+## Files
+
+- `home.cgi`: This file reads the 3 numbers of the fibonacci sequence and outputs them to the screen.
+- `next.cgi`: This file gets the next value in the sequence and writes the 3 values to the numbers.txt file, it then redirects the user back to the home page.
+- `prev.cgi`: This file gets the previous value in the sequence and writes the 3 values to the numbers.txt file, it then redirects the user back to the home page.
+- `reset.cgi`: This file resets the text file va;lues to the first 3 in the sequence, it then redirects the user back to the home page.
+- `numbers.txt`: A text file contyaining 3 values of the fibonacci sequence and the iteration number.
+
+## Usage
+
+1. To zip the files, run the following command in the terminal:
+
+    ```bash
+    sudo tar -cvzPf u21546216.tar /usr/lib/cgi-bin
+    ```
+
+    This will create a `u21546216.tar` file containing all the specified files.
+    make sure to be in the cgi-bin directory before running the command.
+
+2. To unzip the files, run the following command in the terminal:
+
+    ```bash
+    sudo tar -xvzPf u21546216.tar
+    ```
+
+    This will extract all the files from the `u21546216.zip` archive.
+    make sure to be in the directory containing the `u21546216.tar` file before running the command.

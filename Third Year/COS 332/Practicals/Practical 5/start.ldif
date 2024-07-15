@@ -1,0 +1,49 @@
+# Second-level domains
+dn: dc=ac,dc=za
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: ac.za
+dc: ac
+description: Second-level domain for academic institutions
+
+dn: dc=co,dc=za
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: co.za
+dc: co
+description: Second-level domain for commercial organizations
+
+dn: dc=gov,dc=za
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: gov.za
+dc: gov
+description: Second-level domain for government organizations
+
+# Organizations within the "ac.za" domain
+dn: ou=up,dc=ac,dc=za
+objectClass: top
+objectClass: organizationalUnit
+ou: up
+description: University of Pretoria
+description: 137.215.98.140
+description: ns2.up.ac.za
+
+dn: ou=wits,dc=ac,dc=za
+objectClass: top
+objectClass: organizationalUnit
+ou: wits
+description: University of the Witwatersrand
+description: 146.141.13.50
+description: ns1.enetworks.co.za
+
+dn: ou=uct,dc=ac,dc=za
+objectClass: top
+objectClass: organizationalUnit
+ou: uct
+description: University of Cape Town
+description: 147.28.0.34
+description: dns3.uct.net.za
