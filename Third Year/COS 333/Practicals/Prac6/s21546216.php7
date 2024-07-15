@@ -1,0 +1,91 @@
+<?php
+
+// Create a global filename variable
+$fileName = "";
+$fileContents = "";
+$wordToSearchFor = "";
+
+if (isset($argv[1])) {
+    $fileName = $argv[1];
+    $fileContents = file_get_contents($fileName);
+    // echo $fileContents;
+    // echo "\n";
+} else {
+    echo "Please provide a file name as a command-line argument.\n";
+    exit();
+}
+
+if (isset($argv[2])) {
+    $wordToSearchFor = $argv[2];
+    // echo $wordToSearchFor;
+    // echo "\n";
+} else {
+    echo "Please provide a word to search for as a command-line argument.\n";
+    exit();
+}
+
+// Split the file contents into an array of letters
+$letters = str_split($fileContents);
+$finalString = "";
+
+// Output each letter
+foreach ($letters as $letter) {
+    // Dont output white space
+    if ($letter == " ") {
+        continue;
+    }
+    // Dont output any non character symbols
+    if (!ctype_alpha($letter)) {
+        continue;
+    }
+    // Convert the letter to lowercase
+    $letter = strtolower($letter);
+    $finalString .= $letter;
+    // echo $letter;
+}
+
+// echo $finalString;
+// echo "\n";
+
+$count = 0;
+$wordToSearchFor = strtolower($wordToSearchFor);
+
+// echo "Searching for the word: " . $wordToSearchFor[0] . "\n";
+// Loop through the letters starting at the back
+for ($i = strlen($finalString) - 1; $i >= 0 ; $i--) {
+    // echo $finalString[$i];
+    if ($i -2 >= 0 && $finalString[$i] == $wordToSearchFor[0] && $finalString[$i - 1] == $wordToSearchFor[1]) {
+        $count++;
+    }
+}
+// echo "\n";
+
+// echo "The word " . $wordToSearchFor . " appears " . $count . " times in the file.\n";
+
+echo "<!DOCTYPE html>\n";
+echo "<html lang='en'>\n";
+echo "<head>\n";
+echo "    <meta charset='UTF-8'>\n";
+echo "    <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n";
+echo "    <title>COS 333 Practical 6</title>\n";
+echo "</head>\n";
+echo "<body>\n";
+echo "    <div>\n";
+echo "        Converted string: " . $finalString . "\n";
+echo "        <br>\n";
+echo "        Matches for the word " . $wordToSearchFor . ": " . $count . "\n";
+echo "    </div>\n";
+echo "</body>\n";
+
+echo "<style>\n";
+echo "    body {\n";
+echo "        display: grid;\n";
+echo "        place-items: center;\n";
+echo "        height: 100vh;\n";
+echo "    }\n";
+echo "</style>\n";
+echo "</html>\n";
+echo "\n";
+
+
+?>

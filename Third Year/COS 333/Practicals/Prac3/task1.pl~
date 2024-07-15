@@ -1,0 +1,54 @@
+% Facts
+married(peter, mary).
+married(lilly, joseph).
+ownsPet(peter, rover).
+ownsPet(mary, fluffy).
+ownsPet(joseph, tweety).
+ownsPet(lilly, fluffy).
+
+% Rules
+household(X, Y) :-
+    married(X, Y).
+household(X, Y) :-
+    married(Y, X).
+
+householdPet(O1, O2, P) :-
+    (ownsPet(O1, P); ownsPet(O2, P)),
+    household(O1, O2).
+
+wanderingPet(P) :-
+    householdPet(O1, O2, P),
+    O1 \= O2.
+
+% Testing
+% True queries
+% Peter and Mary are in the same household
+% Mary and Peter are in the same household (checking symmetry)
+% Lilly and Joseph are in the same household
+% Joseph and Lilly are in the same household (checking symmetry)
+% Rover is a household pet in the household of Peter and Mary
+% Tweety is a household pet in the household of Lilly and Joseph
+% Fluffy is a household pet in the household of Peter and Mary
+% Fluffy is a household pet in the household of Lilly and Joseph
+% Fluffy is a wandering pet
+?- household(peter, mary).
+?- household(mary, peter).
+?- household(lilly, joseph).
+?- household(joseph, lilly).
+?- householdPet(peter, mary, rover).
+?- householdPet(lilly, joseph, tweety).
+?- householdPet(peter, mary, fluffy).
+?- householdPet(lilly, joseph, fluffy).
+?- wanderingPet(fluffy).
+
+% False queries
+% Mary and Joseph are not in the same household
+% Fluffy is not a pet in the household of Peter and Lilly
+% Rover is not a pet in the household of Lilly and Joseph
+% Tweety is not a pet in the household of Peter and Mary
+% Fluffy is not a wandering pet
+?- \+ household(mary, joseph).
+?- \+ householdPet(mary, joseph, fluffy).
+?- \+ householdPet(lilly, joseph, rover).
+?- \+ householdPet(peter, mary, tweety).
+?- \+ wanderingPet(rover).

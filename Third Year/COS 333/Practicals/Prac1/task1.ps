@@ -1,0 +1,43 @@
+%!PS
+
+% x-coord, y-coord, radius, start-angle, end-angle
+
+% % Big circle (Testing)
+% newpath
+% 300 600 150 0 30 arc
+% stroke
+
+% Define global variables
+/angle 30 def
+/radius 150 def
+/xcoord 300 radius angle cos mul add def
+/ycoord 600 radius angle sin mul add def
+
+% Initialize the counter
+/counter 0 def
+
+12 {
+
+    % if statement that checks if the counter is divisible by 2
+    counter 2 mod 0 eq {
+        newpath
+        xcoord ycoord 20 0 360 arc fill
+        stroke
+    } {
+        newpath
+        xcoord ycoord 20 0 360 arc
+        stroke
+    } ifelse
+
+    % increment the angle by 60
+    /angle angle 30 add def
+    /xcoord 300 radius angle cos mul add def
+    /ycoord 600 radius angle sin mul add def
+
+    % increment the counter
+    /counter counter 1 add def
+
+} repeat
+
+
+showpage
