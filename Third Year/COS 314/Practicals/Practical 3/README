@@ -1,0 +1,37 @@
+# Program Name
+Mushroom Classification using Backpropagation Neural Network and Genetic Programming
+
+## Description
+Mushroom train data is given to both the Neural network and the Genetic Program separately. Both algorithms should then be able to correctly classify the mushrooms in the test data into class 1 or 0.
+
+## Usage
+Make sure you are using wsl2.
+option 1:
+```bash
+make clean
+make
+make run
+```
+
+option 2:
+```bash
+make all
+```
+
+
+## Expected Output
+Neural Netowrk
+Testing the neural network
+Accuracy: 58.8723%
+Specificity: 0
+Sensitivity: 1
+F-measure: 0.741127
+
+
+Genetic Program
+Accuracy: 58.8723%
+Specificity: 0
+Sensitivity: 1
+F-measure: 0.588723
+
+
