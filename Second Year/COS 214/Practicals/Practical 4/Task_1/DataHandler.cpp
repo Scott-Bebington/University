@@ -3,6 +3,7 @@
 
 DataHandler::DataHandler()
 {
+    /// Sign in and token validation successfull, retieve data from the database
     cout << getData() << endl;
 }
 

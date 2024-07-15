@@ -1,0 +1,206 @@
+\doxysection{Food\+Bank.\+h}
+\hypertarget{_food_bank_8h_source}{}\label{_food_bank_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ category:}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ 1:\ ingredients}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ 2:\ meat\ }}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ 3:\ fish}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ 4:\ pizza}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ 5:\ fry}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ 6:\ burger}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ 7:\ pastry}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ 8:\ pasta}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ 9:\ salads}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ 10:\ drinks}}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ingredPrepMin\ =\ 5;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ingredPrepMax\ =\ 15;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ingredCost\ =\ 10;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ meatPrepMin\ =\ 10;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ meatPrepMax\ =\ 20;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ meatCost\ =\ 20;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fishMin\ =\ 60;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fishMax\ =\ 100;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fishCost\ =\ 100;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pizzaMin\ =\ 150;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pizzaMax\ =\ 200;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pizzaCost\ =\ 90;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fryMin\ =\ 20;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fryMax\ =\ 120;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fryCost\ =\ 50;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ burgerMin\ =\ 100;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ burgerMax\ =\ 130;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ burgerCost\ =\ 110;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pastryMin\ =\ 200;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pastryMax\ =\ 250;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pastryCost\ =\ 75;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pataMin\ =\ 100;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pastaMax\ =\ 150;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pastaCost\ =\ 85;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ saladMin\ =\ 20;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ saladMax\ =\ 30;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ saladCost\ =\ 40;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ drinksMin\ =\ 10;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ drinksMax\ =\ 50;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ drinkCost\ =\ 20;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cheeseBurgerIng[6]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\textcolor{stringliteral}{"{}BeefPatty"{}},\textcolor{stringliteral}{"{}Cheddar"{}},\textcolor{stringliteral}{"{}Onion"{}},\textcolor{stringliteral}{"{}Lettuce"{}},\textcolor{stringliteral}{"{}Tomato"{}}\};}
+\DoxyCodeLine{00050\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ steak[2]\ =\ \{\textcolor{stringliteral}{"{}Beef"{}},\textcolor{stringliteral}{"{}Herbs"{}}\};}
+\DoxyCodeLine{00051\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ lamb[3]\ =\{\textcolor{stringliteral}{"{}Lamb"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00052\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ pork[2]\ =\ \{\textcolor{stringliteral}{"{}Pork"{}},\textcolor{stringliteral}{"{}Herbs"{}}\};}
+\DoxyCodeLine{00053\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ chickenCrumbed[2]\ =\{\textcolor{stringliteral}{"{}Chicken"{}},\textcolor{stringliteral}{"{}Crumbs"{}}\};}
+\DoxyCodeLine{00054\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ chicken[2]\ =\{\textcolor{stringliteral}{"{}Chicken"{}},\textcolor{stringliteral}{"{}Crumbs"{}}\};}
+\DoxyCodeLine{00055\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ friedHake[6]\ =\{\textcolor{stringliteral}{"{}Hake"{}},\textcolor{stringliteral}{"{}Crumbs"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00056\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ grilledHake[5]\ =\{\textcolor{stringliteral}{"{}Hake"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00057\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ salmon[5]\ =\ \{\textcolor{stringliteral}{"{}Salmon"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00058\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ sole[5]\ =\ \{\textcolor{stringliteral}{"{}Sole"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00059\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ prawn[5]\ =\ \{\textcolor{stringliteral}{"{}Pawn"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00060\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ grilledCalamari[5]\ =\ \{\textcolor{stringliteral}{"{}Calamari"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00061\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ rawTuna[1]\ =\ \{\textcolor{stringliteral}{"{}Tuna"{}}\};}
+\DoxyCodeLine{00062\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ lobster[5]\ =\ \{\textcolor{stringliteral}{"{}Lobster"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00063\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mussel[5]\ =\ \{\textcolor{stringliteral}{"{}Mussels"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Garlic"{}},\textcolor{stringliteral}{"{}Butter"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00064\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ oyster[3]\ =\ \{\textcolor{stringliteral}{"{}Oyster"{}},\textcolor{stringliteral}{"{}Herbs"{}},\textcolor{stringliteral}{"{}Lemon"{}}\};}
+\DoxyCodeLine{00065\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ margheritaPizzaIng[2]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}}\};}
+\DoxyCodeLine{00066\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ pepperoniPizzaIng[2]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}Pepperoni"{}}\};}
+\DoxyCodeLine{00067\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ vegetarianPizzaIng[6]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Peppers"{}},\ \textcolor{stringliteral}{"{}Mushroom"{}},\ \textcolor{stringliteral}{"{}Olives"{}}\};}
+\DoxyCodeLine{00068\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ hawaiianPizzaIng[4]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Ham"{}}\};}
+\DoxyCodeLine{00069\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ bbqChickenPizzaIng[4]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}},\ \textcolor{stringliteral}{"{}BBQSauce"{}},\ \textcolor{stringliteral}{"{}Chicken"{}}\};}
+\DoxyCodeLine{00070\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mushroomPizzaIng[4]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Mushroom"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}}\};}
+\DoxyCodeLine{00071\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ veggieSupremePizzaIng[7]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Mushroom"{}},\ \textcolor{stringliteral}{"{}Peppers"{}},\ \textcolor{stringliteral}{"{}Olives"{}},\ \textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}}\};}
+\DoxyCodeLine{00072\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ meatLoversPizzaIng[5]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Pepperoni"{}},\ \textcolor{stringliteral}{"{}Bacon"{}},\ \textcolor{stringliteral}{"{}Sausages"{}}\};}
+\DoxyCodeLine{00073\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ supremePizzaIng[7]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Pepperoni"{}},\ \textcolor{stringliteral}{"{}Olives"{}},\ \textcolor{stringliteral}{"{}Peppers"{}},\ \textcolor{stringliteral}{"{}Mushroom"{}},\ \textcolor{stringliteral}{"{}Sausages"{}}\};}
+\DoxyCodeLine{00074\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ whitePizzaIng[3]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}Garlic"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}}\};}
+\DoxyCodeLine{00075\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ buffaloChickenPizzaIng[4]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Chicken"{}},\ \textcolor{stringliteral}{"{}Cheddar"{}}\};}
+\DoxyCodeLine{00076\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ bbqPulledPorkPizzaIng[4]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}BBQSauce"{}},\ \textcolor{stringliteral}{"{}Pulled\ Pork"{}},\ \textcolor{stringliteral}{"{}Onion"{}}\};}
+\DoxyCodeLine{00077\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mediterraneanPizzaIng[6]\ =\ \{\textcolor{stringliteral}{"{}PizzaBase"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Feta"{}},\ \textcolor{stringliteral}{"{}Olives"{}},\ \textcolor{stringliteral}{"{}Peppers"{}},\ \textcolor{stringliteral}{"{}Onion"{}}\};}
+\DoxyCodeLine{00078\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ frenchFriesIng[2]\ =\ \{\textcolor{stringliteral}{"{}Potato"{}},\ \textcolor{stringliteral}{"{}Salt"{}}\};}
+\DoxyCodeLine{00079\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ onionRingsIng[2]\ =\ \{\textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Batter"{}}\};}
+\DoxyCodeLine{00080\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ sweetPotatoFriesIng[2]\ =\ \{\textcolor{stringliteral}{"{}Squash"{}},\ \textcolor{stringliteral}{"{}Salt"{}}\};}
+\DoxyCodeLine{00081\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ zucchiniFriesIng[2]\ =\ \{\textcolor{stringliteral}{"{}Zucchini"{}},\ \textcolor{stringliteral}{"{}Batter"{}}\};}
+\DoxyCodeLine{00082\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ curlyFriesIng[2]\ =\ \{\textcolor{stringliteral}{"{}Potato"{}},\ \textcolor{stringliteral}{"{}Salt"{}}\};}
+\DoxyCodeLine{00083\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ garlicParmesanFriesIng[3]\ =\ \{\textcolor{stringliteral}{"{}Potato"{}},\ \textcolor{stringliteral}{"{}Garlic"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}}\};}
+\DoxyCodeLine{00084\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ loadedChiliCheeseFriesIng[4]\ =\ \{\textcolor{stringliteral}{"{}Potato"{}},\ \textcolor{stringliteral}{"{}Jalapeno"{}},\ \textcolor{stringliteral}{"{}Cheddar"{}},\ \textcolor{stringliteral}{"{}Onions"{}}\};}
+\DoxyCodeLine{00085\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ applePieIng[3]\ =\ \{\textcolor{stringliteral}{"{}PastryDough"{}},\ \textcolor{stringliteral}{"{}Apples"{}},\ \textcolor{stringliteral}{"{}Sugar"{}}\};}
+\DoxyCodeLine{00086\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ chocolateCroissantIng[3]\ =\ \{\textcolor{stringliteral}{"{}PastryDough"{}},\ \textcolor{stringliteral}{"{}Chocolate"{}},\ \textcolor{stringliteral}{"{}Butter"{}}\};}
+\DoxyCodeLine{00087\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ danishPastryIng[3]\ =\ \{\textcolor{stringliteral}{"{}PastryDough"{}},\ \textcolor{stringliteral}{"{}Cream"{}},\ \textcolor{stringliteral}{"{}Apples"{}}\};}
+\DoxyCodeLine{00088\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ eclairIng[4]\ =\ \{\textcolor{stringliteral}{"{}PastryDough"{}},\ \textcolor{stringliteral}{"{}Cream"{}},\ \textcolor{stringliteral}{"{}Chocolate"{}},\ \textcolor{stringliteral}{"{}Vanilla"{}}\};}
+\DoxyCodeLine{00089\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cinnamonRollIng[3]\ =\ \{\textcolor{stringliteral}{"{}PastryDough"{}},\ \textcolor{stringliteral}{"{}Cinnamon"{}},\ \textcolor{stringliteral}{"{}Sugar"{}}\};}
+\DoxyCodeLine{00090\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ bbqBaconBurgerIng[6]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Bacon"{}},\ \textcolor{stringliteral}{"{}BBQ\ Sauce"{}},\ \textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}}\};}
+\DoxyCodeLine{00091\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mushroomSwissBurgerIng[5]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Mushrooms"{}},\ \textcolor{stringliteral}{"{}Cheddar"{}},\ \textcolor{stringliteral}{"{}Onion"{}}\};}
+\DoxyCodeLine{00092\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ spicyJalapenoBurgerIng[5]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Jalapeno"{}},\ \textcolor{stringliteral}{"{}Pepper"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}}\};}
+\DoxyCodeLine{00093\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ veggieBurgerIng[6]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Cheddar"{}},\ \textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}},\ \textcolor{stringliteral}{"{}Tomato"{}}\};}
+\DoxyCodeLine{00094\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ doublePattyBurgerIng[7]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Cheese"{}},\ \textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}},\ \textcolor{stringliteral}{"{}Tomato"{}}\};}
+\DoxyCodeLine{00095\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ baconAvocadoBurgerIng[6]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Bacon"{}},\ \textcolor{stringliteral}{"{}Avocado"{}},\ \textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}}\};}
+\DoxyCodeLine{00096\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ teriyakiPineappleBurgerIng[5]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Seasoning"{}},\ \textcolor{stringliteral}{"{}Pineapple"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}}\};}
+\DoxyCodeLine{00097\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ buffaloChickenBurgerIng[4]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}ChickenPatty"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}}\};}
+\DoxyCodeLine{00098\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ blueCheeseBurgerIng[5]\ =\ \{\textcolor{stringliteral}{"{}Buns"{}},\ \textcolor{stringliteral}{"{}BeefPatty"{}},\ \textcolor{stringliteral}{"{}Bacon"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}},\ \textcolor{stringliteral}{"{}Lettuce"{}}\};}
+\DoxyCodeLine{00099\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ spaghettiAglioEOlioIng[2]\ =\ \{\textcolor{stringliteral}{"{}Spaghetti"{}},\ \textcolor{stringliteral}{"{}Garlic"{}}\};}
+\DoxyCodeLine{00100\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ penneArrabbiataIng[3]\ =\ \{\textcolor{stringliteral}{"{}LasagnaStrips"{}},\ \textcolor{stringliteral}{"{}Sauce"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}}\};}
+\DoxyCodeLine{00101\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ linguineClamsIng[3]\ =\ \{\textcolor{stringliteral}{"{}LasagnaStrips"{}},\ \textcolor{stringliteral}{"{}Oyster"{}},\ \textcolor{stringliteral}{"{}Garlic"{}}\};}
+\DoxyCodeLine{00102\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ fettuccinePestoIng[2]\ =\ \{\textcolor{stringliteral}{"{}Spaghetti"{}},\ \textcolor{stringliteral}{"{}Sauce"{}}\};}
+\DoxyCodeLine{00103\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cavatelliBroccoliIng[2]\ =\ \{\textcolor{stringliteral}{"{}Spaghetti"{}},\ \textcolor{stringliteral}{"{}Broccoli"{}}\};}
+\DoxyCodeLine{00104\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ rigatoniTomatoSauceIng[2]\ =\ \{\textcolor{stringliteral}{"{}Ravioli"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}}\};}
+\DoxyCodeLine{00105\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ spaghettiPuttanescaIng[5]\ =\ \{\textcolor{stringliteral}{"{}Spaghetti"{}},\ \textcolor{stringliteral}{"{}TomatoSauce"{}},\ \textcolor{stringliteral}{"{}Olives"{}},\ \textcolor{stringliteral}{"{}Garlic"{}},\ \textcolor{stringliteral}{"{}Garlic"{}}\};}
+\DoxyCodeLine{00106\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ penneVodkaIng[4]\ =\ \{\textcolor{stringliteral}{"{}Ravioli"{}},\ \textcolor{stringliteral}{"{}Vodka"{}},\ \textcolor{stringliteral}{"{}Cream"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}}\};}
+\DoxyCodeLine{00107\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ linguineAglioEOlioIng[2]\ =\ \{\textcolor{stringliteral}{"{}Ravioli"{}},\ \textcolor{stringliteral}{"{}Garlic"{}}\};}
+\DoxyCodeLine{00108\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ fettuccineAlfredoIng[4]\ =\ \{\textcolor{stringliteral}{"{}Spaghetti"{}},\ \textcolor{stringliteral}{"{}Cream"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}},\ \textcolor{stringliteral}{"{}Butter"{}}\};}
+\DoxyCodeLine{00109\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ caesarSaladIng[4]\ =\ \{\textcolor{stringliteral}{"{}Lettuce"{}},\ \textcolor{stringliteral}{"{}Crumbs"{}},\ \textcolor{stringliteral}{"{}Parmesan"{}},\ \textcolor{stringliteral}{"{}OliveOil"{}}\};}
+\DoxyCodeLine{00110\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ gardenSaladIng[3]\ =\ \{\textcolor{stringliteral}{"{}Beans"{}},\ \textcolor{stringliteral}{"{}Tomato"{}},\ \textcolor{stringliteral}{"{}Cucumber"{}}\};}
+\DoxyCodeLine{00111\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ greekSaladIng[5]\ =\ \{\textcolor{stringliteral}{"{}Lettuce"{}},\ \textcolor{stringliteral}{"{}Tomato"{}},\ \textcolor{stringliteral}{"{}Cucumber"{}},\ \textcolor{stringliteral}{"{}Olives"{}},\ \textcolor{stringliteral}{"{}Feta"{}}\};}
+\DoxyCodeLine{00112\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ capreseSaladIng[3]\ =\ \{\textcolor{stringliteral}{"{}Tomato"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}},\ \textcolor{stringliteral}{"{}Herbs"{}}\};}
+\DoxyCodeLine{00113\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cobbSaladIng[6]\ =\ \{\textcolor{stringliteral}{"{}Beans"{}},\ \textcolor{stringliteral}{"{}Chicken"{}},\ \textcolor{stringliteral}{"{}Bacon"{}},\ \textcolor{stringliteral}{"{}Egg"{}},\ \textcolor{stringliteral}{"{}Avocado"{}},\ \textcolor{stringliteral}{"{}Blue\ Cheese"{}}\};}
+\DoxyCodeLine{00114\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ spinachStrawberrySaladIng[4]\ =\ \{\textcolor{stringliteral}{"{}Lettuce"{}},\ \textcolor{stringliteral}{"{}Strawberry"{}},\ \textcolor{stringliteral}{"{}Herbs"{}},\ \textcolor{stringliteral}{"{}Peas"{}}\};}
+\DoxyCodeLine{00115\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ waldorfSaladIng[5]\ =\ \{\textcolor{stringliteral}{"{}Beans"{}},\ \textcolor{stringliteral}{"{}Apples"{}},\ \textcolor{stringliteral}{"{}Garlic"{}},\ \textcolor{stringliteral}{"{}Herbs"{}},\ \textcolor{stringliteral}{"{}Sauce"{}}\};}
+\DoxyCodeLine{00116\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ asianNoodleSaladIng[5]\ =\ \{\textcolor{stringliteral}{"{}Noodles"{}},\ \textcolor{stringliteral}{"{}Cabbage"{}},\ \textcolor{stringliteral}{"{}Carrots"{}},\ \textcolor{stringliteral}{"{}Noodles"{}},\ \textcolor{stringliteral}{"{}Sauce"{}}\};}
+\DoxyCodeLine{00117\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mediterraneanSaladIng[5]\ =\ \{\textcolor{stringliteral}{"{}Beans"{}},\ \textcolor{stringliteral}{"{}Tomato"{}},\ \textcolor{stringliteral}{"{}Cucumber"{}},\ \textcolor{stringliteral}{"{}Onion"{}},\ \textcolor{stringliteral}{"{}Feta"{}}\};}
+\DoxyCodeLine{00118\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ antipastoSaladIng[6]\ =\ \{\textcolor{stringliteral}{"{}Beans"{}},\ \textcolor{stringliteral}{"{}Salami"{}},\ \textcolor{stringliteral}{"{}Olives"{}},\ \textcolor{stringliteral}{"{}Anchovies"{}},\ \textcolor{stringliteral}{"{}Mozzarella"{}},\ \textcolor{stringliteral}{"{}Sauce"{}}\};}
+\DoxyCodeLine{00119\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cocaColaIng[1]\ =\ \{\textcolor{stringliteral}{"{}Coke"{}}\};}
+\DoxyCodeLine{00120\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ pepsiIng[1]\ =\ \{\textcolor{stringliteral}{"{}Coke"{}}\};}
+\DoxyCodeLine{00121\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ spriteIng[1]\ =\ \{\textcolor{stringliteral}{"{}Sprite"{}}\};}
+\DoxyCodeLine{00122\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mountainDewIng[1]\ =\ \{\textcolor{stringliteral}{"{}Fanta"{}}\};}
+\DoxyCodeLine{00123\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ rootBeerIng[1]\ =\ \{\textcolor{stringliteral}{"{}Beer"{}}\};}
+\DoxyCodeLine{00124\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ icedTeaIng[1]\ =\ \{\textcolor{stringliteral}{"{}RooiBos"{}}\};}
+\DoxyCodeLine{00125\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ lemonadeIng[3]\ =\ \{\textcolor{stringliteral}{"{}Lemon"{}},\textcolor{stringliteral}{"{}Water"{}},\textcolor{stringliteral}{"{}Sugar"{}}\};}
+\DoxyCodeLine{00126\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ orangeJuiceIng[1]\ =\ \{\textcolor{stringliteral}{"{}Fanta"{}}\};}
+\DoxyCodeLine{00127\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cranberryJuiceIng[1]\ =\ \{\textcolor{stringliteral}{"{}Sauce"{}}\};}
+\DoxyCodeLine{00128\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ grapeJuiceIng[1]\ =\ \{\textcolor{stringliteral}{"{}Wine"{}}\};}
+\DoxyCodeLine{00129\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ appleJuiceIng[1]\ =\ \{\textcolor{stringliteral}{"{}Brandy"{}}\};}
+\DoxyCodeLine{00130\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ limeSodaIng[1]\ =\ \{\textcolor{stringliteral}{"{}Sprite"{}}\};}
+\DoxyCodeLine{00131\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ cherrySodaIng[1]\ =\ \{\textcolor{stringliteral}{"{}Sprite"{}}\};}
+\DoxyCodeLine{00132\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ fruitPunchIng[1]\ =\ \{\textcolor{stringliteral}{"{}Wine"{}}\};}
+\DoxyCodeLine{00133\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ lemonLimeSodaIng[1]\ =\ \{\textcolor{stringliteral}{"{}Sprite"{}}\};}
+\DoxyCodeLine{00134\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mangoSmoothieIng[2]\ =\ \{\textcolor{stringliteral}{"{}Sauce"{}},\ \textcolor{stringliteral}{"{}Cream"{}}\};}
+\DoxyCodeLine{00135\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ strawberryBananaSmoothieIng[2]\ =\ \{\textcolor{stringliteral}{"{}Strawberries"{}},\ \textcolor{stringliteral}{"{}Banana"{}}\};}
+\DoxyCodeLine{00136\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ pinaColadaIng[3]\ =\ \{\textcolor{stringliteral}{"{}Pineapple"{}},\ \textcolor{stringliteral}{"{}Milk"{}},\ \textcolor{stringliteral}{"{}Whiskey"{}}\};}
+\DoxyCodeLine{00137\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ mojitoIng[3]\ =\ \{\textcolor{stringliteral}{"{}Lime"{}},\ \textcolor{stringliteral}{"{}Mint"{}},\ \textcolor{stringliteral}{"{}Whiskey"{}}\};}
+\DoxyCodeLine{00138\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ espressoIng[1]\ =\ \{\textcolor{stringliteral}{"{}CoffeeBeans"{}}\};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_food}{Food}}\{}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{string}\ name\ ;}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{int}\ category;}
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{int}\ min;}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{int}\ max;}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{int}\ cost;}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}*\ ingredients;}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{int}\ size;}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \};}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_food}{Food}}\ foodBank[206]=\{}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Fillet"{}},2,meatPrepMin,meatPrepMax,meatCost,steak,2\}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Rump"{}},2,meatPrepMin,meatPrepMax,meatCost,steak,2\}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}LambChops"{}},2,meatPrepMin,meatPrepMax,meatCost,lamb,3\}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}PorkChops"{}},2,meatPrepMin,meatPrepMax,meatCost,pork,2\}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Schnitzel"{}},2,meatPrepMin,meatPrepMax,meatCost,chickenCrumbed,2\}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}FriedHake"{}},3,fishMin,fishMax,fishCost,friedHake,6\}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}KingPrawn"{}},3,fishMin,fishMax,fishCost,prawn,5\}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}GrilledCalamari"{}},3,fishMin,fishMax,fishCost,grilledCalamari,5\}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}ThreeOysters"{}},3,fishMin,fishMax,fishCost,oyster,3\}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Margherita\ Pizza"{}},\ 4,\ pizzaMin,\ pizzaMax,\ pizzaCost,\ margheritaPizzaIng,\ 2\}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Pepperoni\ Pizza"{}},\ 4,\ pizzaMin,\ pizzaMax,\ pizzaCost,\ pepperoniPizzaIng,\ 2\}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Vegetarian\ Pizza"{}},\ 4,\ pizzaMin,\ pizzaMax,\ pizzaCost,\ vegetarianPizzaIng,\ 6\}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Hawaiian\ Pizza"{}},\ 4,\ pizzaMin,\ pizzaMax,\ pizzaCost,\ hawaiianPizzaIng,\ 4\}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}BBQ\ Chicken\ Pizza"{}},\ 4,\ pizzaMin,\ pizzaMax,\ pizzaCost,\ bbqChickenPizzaIng,\ 4\}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Mushroom\ Pizza"{}},\ 4,\ pizzaMin,\ pizzaMax,\ pizzaCost,\ mushroomPizzaIng,\ 4\}}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Buffalo\ Chicken\ Burger"{}},\ 6,\ burgerMin,\ burgerMax,\ burgerCost,\ buffaloChickenBurgerIng,\ 4\}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Double\ Patty\ Burger"{}},\ 6,\ burgerMin,\ burgerMax,\ burgerCost,\ doublePattyBurgerIng,\ 7\}}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Bacon\ Avocado\ Burger"{}},\ 6,\ burgerMin,\ burgerMax,\ burgerCost,\ baconAvocadoBurgerIng,\ 6\}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}French\ Fries"{}},\ 5,\ fryMin,\ fryMax,\ fryCost,\ frenchFriesIng,\ 2\}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Onion\ Rings"{}},\ 5,\ fryMin,\ fryMax,\ fryCost,\ onionRingsIng,\ 2\}}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Sweet\ Potato\ Fries"{}},\ 5,\ fryMin,\ fryMax,\ fryCost,\ sweetPotatoFriesIng,\ 2\}}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Caesar\ Salad"{}},\ 9,\ saladMin,\ saladMax,\ saladCost,\ caesarSaladIng,\ 4\}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Greek\ Salad"{}},\ 9,\ saladMin,\ saladMax,\ saladCost,\ greekSaladIng,\ 5\}}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Caprese\ Salad"{}},\ 9,\ saladMin,\ saladMax,\ saladCost,\ capreseSaladIng,\ 3\}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Apple\ Pie"{}},\ 7,\ pastryMin,\ pastryMax,\ pastryCost,\ applePieIng,\ 3\}}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Chocolate\ Croissant"{}},\ 7,\ pastryMin,\ pastryMax,\ pastryCost,\ chocolateCroissantIng,\ 3\}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Danish\ Pastry"{}},\ 7,\ pastryMin,\ pastryMax,\ pastryCost,\ danishPastryIng,\ 3\}}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Eclair"{}},\ 7,\ pastryMin,\ pastryMax,\ pastryCost,\ eclairIng,\ 4\}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Cinnamon\ Roll"{}},\ 7,\ pastryMin,\ pastryMax,\ pastryCost,\ cinnamonRollIng,\ 3\}}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Coca-\/Cola"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ cocaColaIng,\ 1\}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Sprite"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ spriteIng,\ 1\}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Iced\ Tea"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ icedTeaIng,\ 1\}}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Lemonade"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ lemonadeIng,\ 3\}}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Orange\ Juice"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ orangeJuiceIng,\ 1\}}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Cranberry\ Juice"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ cranberryJuiceIng,\ 1\}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Grape\ Juice"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ grapeJuiceIng,\ 1\}}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Apple\ Juice"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ appleJuiceIng,\ 1\}}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Mango\ Smoothie"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ mangoSmoothieIng,\ 2\}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Strawberry\ Banana\ Smoothie"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ strawberryBananaSmoothieIng,\ 2\}}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ ,\{\textcolor{stringliteral}{"{}Espresso"{}},\ 10,\ drinksMin,\ drinksMax,\ drinkCost,\ espressoIng,\ 1\}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ }
+
+\end{DoxyCode}

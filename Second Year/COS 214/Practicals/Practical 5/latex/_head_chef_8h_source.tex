@@ -1,0 +1,31 @@
+\doxysection{Head\+Chef.\+h}
+\hypertarget{_head_chef_8h_source}{}\label{_head_chef_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Chef.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CategoryChef.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Order.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_head_chef}{HeadChef}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_chef}{Chef}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_category_chef}{CategoryChef}}*\ chefs;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_head_chef}{HeadChef}}*\ headChef;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{string}\ type\ =\ \textcolor{stringliteral}{"{}HeadChef"{}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_head_chef_a5e863fcf5612b4513ff446264a25ca67}{startOrder}}(\mbox{\hyperlink{class_order}{Order}}*);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_head_chef_ad0f9f1858e4c14f423576acbdd671b13}{delegateOrder}}(\mbox{\hyperlink{class_order}{Order}}*);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_head_chef_acec54e7b6909bec957d25efc3dbd1fd6}{plateOrder}}(\mbox{\hyperlink{class_order}{Order}}*);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ handleRequest(\mbox{\hyperlink{class_order}{Order}}*);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ notify(\mbox{\hyperlink{class_order}{Order}}\ *o);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_head_chef}{HeadChef}}*\ getHeadChef();}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_head_chef}{HeadChef}}(\mbox{\hyperlink{class_category_chef}{CategoryChef}}*);}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+
+\end{DoxyCode}

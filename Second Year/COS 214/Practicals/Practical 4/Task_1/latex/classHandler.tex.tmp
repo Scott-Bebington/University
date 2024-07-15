@@ -1,0 +1,26 @@
+\hypertarget{classHandler}{}\doxysection{Handler Class Reference}
+\label{classHandler}\index{Handler@{Handler}}
+
+
+Collaboration diagram for Handler\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHandler_a89b90112075f7549e82d7a8ba8646e5f}\label{classHandler_a89b90112075f7549e82d7a8ba8646e5f}} 
+virtual void {\bfseries Next\+Handler} (\mbox{\hyperlink{classHandler}{Handler}} $\ast$handler)=0
+\item 
+\mbox{\Hypertarget{classHandler_a2b12ff7cff9a59134a6d6cd8130b4dea}\label{classHandler_a2b12ff7cff9a59134a6d6cd8130b4dea}} 
+virtual void {\bfseries Request} (\mbox{\hyperlink{classUser}{User}} $\ast$user, string Request, \mbox{\hyperlink{classServer}{Server}} $\ast$server)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHandler_ae7fe05ea3be81f3543c5bf39af9f8b39}\label{classHandler_ae7fe05ea3be81f3543c5bf39af9f8b39}} 
+\mbox{\hyperlink{classHandler}{Handler}} $\ast$ {\bfseries handler}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Handler.\+h\end{DoxyCompactItemize}

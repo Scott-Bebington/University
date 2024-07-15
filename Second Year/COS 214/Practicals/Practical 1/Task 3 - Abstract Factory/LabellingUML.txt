@@ -1,0 +1,30 @@
+Abstract Product A:
+Window
+
+Abstract Product B:
+Primitive
+
+Concrete Product A1:
+openGLWindow
+
+Concrete Product A2
+vulkanWindow
+
+Concrete Product B1:
+openGLPrimitive
+
+Concrete Product B2:
+vulkanPrimitive
+
+Abstract Factory:
+Factory
+
+Concrete Factory 1:
+openGLFactory
+
+Concrete Factory 2:
+vulkanFactory
+
+
+
+

@@ -1,0 +1,29 @@
+\doxysection{Order\+Backup.\+h}
+\hypertarget{_order_backup_8h_source}{}\label{_order_backup_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_customer}{Customer}};}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Dish.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_order_backup}{OrderBackup}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ meals;\ \ \ \ \ \ \ \ \textcolor{comment}{//head}}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ state;}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_customer}{Customer}}*\ customer;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_backup}{OrderBackup}}*\ next;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ price;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_backup}{OrderBackup}}(\mbox{\hyperlink{class_meal}{Meal}}*\ meals,\ \textcolor{keywordtype}{string}\ state,\ \mbox{\hyperlink{class_customer}{Customer}}*\ customer,\ \textcolor{keywordtype}{int}\ price);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_backup}{\string~OrderBackup}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ getMeals();}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ getState();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_customer}{Customer}}*\ getCustomer();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getPrice();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_backup}{OrderBackup}}*\ getNext();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setNext(\mbox{\hyperlink{class_order_backup}{OrderBackup}}*\ ob);}
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

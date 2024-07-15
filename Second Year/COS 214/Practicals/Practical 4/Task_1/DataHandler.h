@@ -10,6 +10,7 @@ class DataHandler
 public:
     DataHandler();
     string getData();
+    void NoWarning() {}
 private:
     string data = "You got the data";
 };

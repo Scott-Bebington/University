@@ -15,6 +15,7 @@ public:
     SignIn(User *user, string Request, Server *server);
     string generateNonseToken();
     bool checkNonseToken(Server *server, User *User1);
+    void NoWarning() {}
 private:
     string NonseToken;
 };

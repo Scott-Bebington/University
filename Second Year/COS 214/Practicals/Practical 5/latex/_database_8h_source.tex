@@ -1,0 +1,19 @@
+\doxysection{Database.\+h}
+\hypertarget{_database_8h_source}{}\label{_database_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Tab.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Order.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database}{Database}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_tab}{Tab}}*\ db;}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addTab(\mbox{\hyperlink{class_tab}{Tab}}*\ t);}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database}{Database}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addToTab(\mbox{\hyperlink{class_order}{Order}}*\ o,\ \textcolor{keywordtype}{int}\ custId);}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ payTab(\textcolor{keywordtype}{int}\ custId);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database}{\string~Database}}();}
+\DoxyCodeLine{00014\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\doxysection{Maitre\+D.\+h}
+\hypertarget{_maitre_d_8h_source}{}\label{_maitre_d_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_employee}{Employee}};}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_customer}{Customer}};}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Table.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Floor.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_maitre_d}{MaitreD}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_employee}{Employee}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::queue<Customer*>\ bookings;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::queue<Customer*>\ queue;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ std::vector<Waiter*>\ waiters;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_floor}{Floor}}*\ floor;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_maitre_d}{MaitreD}}(\mbox{\hyperlink{class_floor}{Floor}}*\ f);}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_maitre_d}{\string~MaitreD}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ seat(\mbox{\hyperlink{class_customer}{Customer}}*\ c);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addBooking(\mbox{\hyperlink{class_customer}{Customer}}*\ c);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addQueue(\mbox{\hyperlink{class_customer}{Customer}}*\ c);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ checkAvailability();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ removeBooking(\mbox{\hyperlink{class_customer}{Customer}}*\ c);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ combine(\mbox{\hyperlink{class_table}{Table}}*\ t1,\ \mbox{\hyperlink{class_table}{Table}}*\ t2);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ split(\mbox{\hyperlink{class_table}{Table}}*\ t);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ assignWaiter(\mbox{\hyperlink{class_waiter}{Waiter}}*\ w,\ \mbox{\hyperlink{class_table}{Table}}*\ t);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ notify();}
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

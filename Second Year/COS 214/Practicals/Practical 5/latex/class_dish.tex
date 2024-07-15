@@ -1,0 +1,133 @@
+\doxysection{Dish Class Reference}
+\hypertarget{class_dish}{}\label{class_dish}\index{Dish@{Dish}}
+Inheritance diagram for Dish\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dish}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dish_a5fb1db0e80c5f79fc6f812480cfbbf4b}\label{class_dish_a5fb1db0e80c5f79fc6f812480cfbbf4b} 
+{\bfseries Dish} (string dis)
+\item 
+\Hypertarget{class_dish_acb97e2d8a0e9ae77f5560ff3e1dd1a8f}\label{class_dish_acb97e2d8a0e9ae77f5560ff3e1dd1a8f} 
+void {\bfseries set\+Next} (\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}next\+Meal)
+\item 
+\Hypertarget{class_dish_a060c19e49c81d62d91f187cefc078236}\label{class_dish_a060c19e49c81d62d91f187cefc078236} 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Next} ()
+\item 
+\Hypertarget{class_dish_a9d33e969882145e84cccbc75074b0b7c}\label{class_dish_a9d33e969882145e84cccbc75074b0b7c} 
+void {\bfseries remove\+Next} ()
+\item 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_dish_a2c2fac423ac03f5494224ff645558806}{get\+Meal}} ()
+\item 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_dish_a5ac613b39ba796cbc8e3efd97b277150}{get\+Child}} (int child)
+\item 
+string \mbox{\hyperlink{class_dish_a867606e840ca86b4ea2a976d968c4986}{get\+Name}} ()
+\item 
+int \mbox{\hyperlink{class_dish_ae74a0b5de6878416adaa963320c90a4f}{get\+Category}} ()
+\item 
+int \mbox{\hyperlink{class_dish_a9020a16cc6c85f99df50cce3d9c2493f}{get\+Min}} ()
+\item 
+int \mbox{\hyperlink{class_dish_a4b184d1970904854251b28bf1118f627}{get\+Max}} ()
+\item 
+int \mbox{\hyperlink{class_dish_a2759045047a5b834e547d1d25e50159e}{get\+Cost}} ()
+\item 
+\Hypertarget{class_dish_a560ad387beca0a1d2cfca3a412ab5610}\label{class_dish_a560ad387beca0a1d2cfca3a412ab5610} 
+int {\bfseries get\+Amount\+Ingredients} ()
+\item 
+\Hypertarget{class_dish_a301655199c1efbdf253a68dbc5ae8888}\label{class_dish_a301655199c1efbdf253a68dbc5ae8888} 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+This\+Meal} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_meal}{Meal}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Next} (\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}meal)
+\item 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Next} ()
+\item 
+virtual void {\bfseries add} (\mbox{\hyperlink{class_meal}{Meal}} m)
+\item 
+virtual void {\bfseries remove} (\mbox{\hyperlink{class_meal}{Meal}} m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dish_ae74a0b5de6878416adaa963320c90a4f}\label{class_dish_ae74a0b5de6878416adaa963320c90a4f} 
+\index{Dish@{Dish}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily int Dish\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_dish_a5ac613b39ba796cbc8e3efd97b277150}\label{class_dish_a5ac613b39ba796cbc8e3efd97b277150} 
+\index{Dish@{Dish}!getChild@{getChild}}
+\index{getChild@{getChild}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} Dish\+::get\+Child (\begin{DoxyParamCaption}\item[{int}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_dish_a2759045047a5b834e547d1d25e50159e}\label{class_dish_a2759045047a5b834e547d1d25e50159e} 
+\index{Dish@{Dish}!getCost@{getCost}}
+\index{getCost@{getCost}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily int Dish\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_dish_a4b184d1970904854251b28bf1118f627}\label{class_dish_a4b184d1970904854251b28bf1118f627} 
+\index{Dish@{Dish}!getMax@{getMax}}
+\index{getMax@{getMax}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getMax()}{getMax()}}
+{\footnotesize\ttfamily int Dish\+::get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_dish_a2c2fac423ac03f5494224ff645558806}\label{class_dish_a2c2fac423ac03f5494224ff645558806} 
+\index{Dish@{Dish}!getMeal@{getMeal}}
+\index{getMeal@{getMeal}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getMeal()}{getMeal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} Dish\+::get\+Meal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_dish_a9020a16cc6c85f99df50cce3d9c2493f}\label{class_dish_a9020a16cc6c85f99df50cce3d9c2493f} 
+\index{Dish@{Dish}!getMin@{getMin}}
+\index{getMin@{getMin}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getMin()}{getMin()}}
+{\footnotesize\ttfamily int Dish\+::get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_dish_a867606e840ca86b4ea2a976d968c4986}\label{class_dish_a867606e840ca86b4ea2a976d968c4986} 
+\index{Dish@{Dish}!getName@{getName}}
+\index{getName@{getName}!Dish@{Dish}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Dish\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dish.\+h\item 
+Dish.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{classSignIn}{}\doxysection{Sign\+In Class Reference}
+\label{classSignIn}\index{SignIn@{SignIn}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignIn_a084c8847b971f545e66187b74d565d84}{Sign\+In}} (\mbox{\hyperlink{classUser}{User}} $\ast$user, string Request, \mbox{\hyperlink{classServer}{Server}} $\ast$server)
+\item 
+\mbox{\Hypertarget{classSignIn_a6f589de2b34656501ecdcaa36ce702bd}\label{classSignIn_a6f589de2b34656501ecdcaa36ce702bd}} 
+string {\bfseries generate\+Nonse\+Token} ()
+\item 
+\mbox{\Hypertarget{classSignIn_a4a314cc6b4b84095abd5c8a17dc0cca2}\label{classSignIn_a4a314cc6b4b84095abd5c8a17dc0cca2}} 
+bool {\bfseries check\+Nonse\+Token} (\mbox{\hyperlink{classServer}{Server}} $\ast$server, \mbox{\hyperlink{classUser}{User}} $\ast$User1)
+\item 
+\mbox{\Hypertarget{classSignIn_aee1ff99cc5b93e59448b602d72cf8499}\label{classSignIn_aee1ff99cc5b93e59448b602d72cf8499}} 
+void {\bfseries No\+Warning} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignIn_a084c8847b971f545e66187b74d565d84}\label{classSignIn_a084c8847b971f545e66187b74d565d84}} 
+\index{SignIn@{SignIn}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!SignIn@{SignIn}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}}
+{\footnotesize\ttfamily Sign\+In\+::\+Sign\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{user,  }\item[{string}]{Request,  }\item[{\mbox{\hyperlink{classServer}{Server}} $\ast$}]{server }\end{DoxyParamCaption})}
+
+Checking to see if the user is attempting to sign in
+
+If the user is attempting to sign in then check to see if the user has a nonse token
+
+If the user has a nonse token then sign the user in
+
+If the user does not have a nonse token then the sign in request has failed
+
+If the user is not attempting to sign in then pass the request onto the validate token handler to see if the user wants to retrieve data
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sign\+In.\+h\item 
+Sign\+In.\+cpp\end{DoxyCompactItemize}

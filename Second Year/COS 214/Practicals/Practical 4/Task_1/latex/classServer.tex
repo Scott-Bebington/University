@@ -1,0 +1,55 @@
+\hypertarget{classServer}{}\doxysection{Server Class Reference}
+\label{classServer}\index{Server@{Server}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classServer_ae8f1946cfed3da2cd6dc812d2acafc40}{Add\+User}} (\mbox{\hyperlink{classUser}{User}} $\ast$user)
+\item 
+void \mbox{\hyperlink{classServer_ab3e9896da125839597656f14d9721cbc}{output\+Users}} ()
+\item 
+void \mbox{\hyperlink{classServer_a06e57a2e0ffc807bc81533b6a3457221}{make\+Request}} (\mbox{\hyperlink{classUser}{User}} $\ast$, string, \mbox{\hyperlink{classServer}{Server}} $\ast$)
+\item 
+\mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classServer_a3487424fa32bf250269bc394eab731af}{get\+User}} (string)
+\item 
+\mbox{\Hypertarget{classServer_adf4909f021444b40e84d8ca884d58641}\label{classServer_adf4909f021444b40e84d8ca884d58641}} 
+void {\bfseries No\+Warning} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classServer_aae5d83601a05bfb96edac89aae0be163}\label{classServer_aae5d83601a05bfb96edac89aae0be163}} 
+list$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ {\bfseries Users}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classServer_ae8f1946cfed3da2cd6dc812d2acafc40}\label{classServer_ae8f1946cfed3da2cd6dc812d2acafc40}} 
+\index{Server@{Server}!AddUser@{AddUser}}
+\index{AddUser@{AddUser}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{AddUser()}{AddUser()}}
+{\footnotesize\ttfamily void Server\+::\+Add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+Adds a user to the server for future validation\mbox{\Hypertarget{classServer_a3487424fa32bf250269bc394eab731af}\label{classServer_a3487424fa32bf250269bc394eab731af}} 
+\index{Server@{Server}!getUser@{getUser}}
+\index{getUser@{getUser}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} $\ast$ Server\+::get\+User (\begin{DoxyParamCaption}\item[{string}]{token }\end{DoxyParamCaption})}
+
+Access the object through iterator\mbox{\Hypertarget{classServer_a06e57a2e0ffc807bc81533b6a3457221}\label{classServer_a06e57a2e0ffc807bc81533b6a3457221}} 
+\index{Server@{Server}!makeRequest@{makeRequest}}
+\index{makeRequest@{makeRequest}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{makeRequest()}{makeRequest()}}
+{\footnotesize\ttfamily void Server\+::make\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{user,  }\item[{string}]{Request,  }\item[{\mbox{\hyperlink{classServer}{Server}} $\ast$}]{server }\end{DoxyParamCaption})}
+
+The user makes a request to the server, the server hands the request off to the request nonse token handler\mbox{\Hypertarget{classServer_ab3e9896da125839597656f14d9721cbc}\label{classServer_ab3e9896da125839597656f14d9721cbc}} 
+\index{Server@{Server}!outputUsers@{outputUsers}}
+\index{outputUsers@{outputUsers}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{outputUsers()}{outputUsers()}}
+{\footnotesize\ttfamily void Server\+::output\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Access the object through iterator
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Server.\+h\item 
+Server.\+cpp\end{DoxyCompactItemize}

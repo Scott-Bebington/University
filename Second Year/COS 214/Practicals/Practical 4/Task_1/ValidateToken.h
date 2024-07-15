@@ -14,7 +14,7 @@ class ValidateToken
 public:
     ValidateToken(User *user, string Request, Server *server);
     bool checkNonseToken(Server *server, User *User1);
-
+    void NoWarning() {}
 private:
 
 };

@@ -1,0 +1,46 @@
+\hypertarget{classValidateToken}{}\doxysection{Validate\+Token Class Reference}
+\label{classValidateToken}\index{ValidateToken@{ValidateToken}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classValidateToken_ae64cd2eacd0cc239dabc6367f94958d0}{Validate\+Token}} (\mbox{\hyperlink{classUser}{User}} $\ast$user, string Request, \mbox{\hyperlink{classServer}{Server}} $\ast$server)
+\begin{DoxyCompactList}\small\item\em Checking to see if the user is attempting to retrieve data, If the user has a nonse token then validate the token and pass the request onto the data handler If the user does not have a nonse token then the token validation has failed If the user is not attempting to retrieve data then the request is invalid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classValidateToken_a9ff069f5802bcc77945e59fc4b95bdfc}\label{classValidateToken_a9ff069f5802bcc77945e59fc4b95bdfc}} 
+bool {\bfseries check\+Nonse\+Token} (\mbox{\hyperlink{classServer}{Server}} $\ast$server, \mbox{\hyperlink{classUser}{User}} $\ast$User1)
+\item 
+\mbox{\Hypertarget{classValidateToken_a62c5287c016188ad8176856ed21e5ec5}\label{classValidateToken_a62c5287c016188ad8176856ed21e5ec5}} 
+void {\bfseries No\+Warning} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classValidateToken_ae64cd2eacd0cc239dabc6367f94958d0}\label{classValidateToken_ae64cd2eacd0cc239dabc6367f94958d0}} 
+\index{ValidateToken@{ValidateToken}!ValidateToken@{ValidateToken}}
+\index{ValidateToken@{ValidateToken}!ValidateToken@{ValidateToken}}
+\doxysubsubsection{\texorpdfstring{ValidateToken()}{ValidateToken()}}
+{\footnotesize\ttfamily Validate\+Token\+::\+Validate\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{user,  }\item[{string}]{Request,  }\item[{\mbox{\hyperlink{classServer}{Server}} $\ast$}]{server }\end{DoxyParamCaption})}
+
+
+
+Checking to see if the user is attempting to retrieve data, If the user has a nonse token then validate the token and pass the request onto the data handler If the user does not have a nonse token then the token validation has failed If the user is not attempting to retrieve data then the request is invalid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em Request} & \\
+\hline
+{\em server} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+If the user is attempting to retrieve data then check to see if the user has a nonse token
+
+If the user does not have a nonse token then the token validation has failed
+
+If the user is not attempting to retrieve data then the request is invalid
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Validate\+Token.\+h\item 
+Validate\+Token.\+cpp\end{DoxyCompactItemize}

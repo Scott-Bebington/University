@@ -1,0 +1,39 @@
+\doxysection{Ingredients.\+h}
+\hypertarget{_ingredients_8h_source}{}\label{_ingredients_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Meal.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ingredients}{Ingredients}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_meal}{Meal}}\{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ next\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ thisMeal\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{string}\ name\ ;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ category;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ min;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ max;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ cost;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_ingredients}{Ingredients}}(\textcolor{keywordtype}{string}\ ingre);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ setNext(\mbox{\hyperlink{class_meal}{Meal}}*\ nextMeal);}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ getNext();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ removeNext();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ getName();}
+\DoxyCodeLine{00023\ \ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ getChild(\textcolor{keywordtype}{int}\ child);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ getCategory();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ getMin();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ getMax();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ getCost();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \textcolor{keywordtype}{int}\ getAmountIngredients();}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}*\ getThisMeal();}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_ingredients}{\string~Ingredients}}\ ();}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

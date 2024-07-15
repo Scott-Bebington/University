@@ -1,0 +1,244 @@
+\doxysection{Table Class Reference}
+\hypertarget{class_table}{}\label{class_table}\index{Table@{Table}}
+
+
+Class that represents a table in the restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Table.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_table_afff1518e3f4172a5a42375593f55d036}{set\+Combined\+Table}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}combined\+Table)
+\begin{DoxyCompactList}\small\item\em Sets the combined\+Table attribute of a table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_a0097e07cb925c3392e2b1a0abde31fbf}{get\+Combined\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Gets the combined\+Table attribute of a table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_a221b2af1ec3cfa8dfdbfb47a2c9968eb}{set\+Waiter}} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}waiter)
+\begin{DoxyCompactList}\small\item\em Sets the waiter attribute of a table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_a75624b972cccf42cec88168188f26ca7}{get\+Waiter}} ()
+\begin{DoxyCompactList}\small\item\em Gets the waiter attribute of a table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_a74cb22dc214c615f2dbe7c96f2b4f331}{set\+Next}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}next)
+\begin{DoxyCompactList}\small\item\em Sets the next attribute of a table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_a13054bcd80395b3eb8684d06e8faa101}{get\+Next}} ()
+\begin{DoxyCompactList}\small\item\em Gets the next attribute of a table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_a5799683b165b621060d389e46bfeefea}{set\+Previous}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}previous)
+\begin{DoxyCompactList}\small\item\em Sets the previous attribute of a table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_a45c1770766e257fc08ef530c96e21c65}{get\+Previous}} ()
+\begin{DoxyCompactList}\small\item\em Gets the previous attribute of a table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_a344e009db709ed44a259cf1633556c6e}{set\+Available}} (bool available)
+\begin{DoxyCompactList}\small\item\em Sets the availability of a table. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_table_ab52ff668157b52ce2d7bc2368e2b5953}{get\+Available}} ()
+\begin{DoxyCompactList}\small\item\em Gets the availability of a table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_table_a969f7afdade23b3eb84bc4955caaf636}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the size of a table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_table_aa0d99400a873ac7ef312224058d506e8}{get\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of a table. \end{DoxyCompactList}\item 
+\Hypertarget{class_table_a69402118d75dd39a27916e9d2fcfefab}\label{class_table_a69402118d75dd39a27916e9d2fcfefab} 
+{\bfseries Table} (int size, bool available, int number)
+\item 
+\Hypertarget{class_table_aaec27a0e83077447301124847f412308}\label{class_table_aaec27a0e83077447301124847f412308} 
+{\bfseries Table} (int size, bool available, int number, bool \mbox{\hyperlink{class_table_ae6f7cce816550a40abcbb1c1e5238196}{combined}}, \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}combined\+Table)
+\item 
+\Hypertarget{class_table_a9a559f2e7beb37b511ee9f88873164f8}\label{class_table_a9a559f2e7beb37b511ee9f88873164f8} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Table} ()
+\begin{DoxyCompactList}\small\item\em Destructor for a table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_table_ae6f7cce816550a40abcbb1c1e5238196}{combined}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a table in the restaurant. 
+
+Each \doxylink{class_table}{Table} represent a node in a linked list. There are previous and next pointers to navigate through the list. Each table has a waiter assigned to it and a pointer to another table if it is combined. There are also other attributes for example the table number, size and its availability. \begin{DoxyAuthor}{Author}
+Alcodeholics Anonymous 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_table_ab52ff668157b52ce2d7bc2368e2b5953}\label{class_table_ab52ff668157b52ce2d7bc2368e2b5953} 
+\index{Table@{Table}!getAvailable@{getAvailable}}
+\index{getAvailable@{getAvailable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getAvailable()}{getAvailable()}}
+{\footnotesize\ttfamily Table\+::get\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the availability of a table. 
+
+\begin{DoxyReturn}{Returns}
+The availability of a table 
+\end{DoxyReturn}
+\Hypertarget{class_table_a0097e07cb925c3392e2b1a0abde31fbf}\label{class_table_a0097e07cb925c3392e2b1a0abde31fbf} 
+\index{Table@{Table}!getCombinedTable@{getCombinedTable}}
+\index{getCombinedTable@{getCombinedTable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getCombinedTable()}{getCombinedTable()}}
+{\footnotesize\ttfamily Table\+::get\+Combined\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the combined\+Table attribute of a table. 
+
+\begin{DoxyReturn}{Returns}
+The table that is combined with this table 
+\end{DoxyReturn}
+\Hypertarget{class_table_a13054bcd80395b3eb8684d06e8faa101}\label{class_table_a13054bcd80395b3eb8684d06e8faa101} 
+\index{Table@{Table}!getNext@{getNext}}
+\index{getNext@{getNext}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getNext()}{getNext()}}
+{\footnotesize\ttfamily Table\+::get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the next attribute of a table. 
+
+\begin{DoxyReturn}{Returns}
+The table that is next in the list 
+\end{DoxyReturn}
+\Hypertarget{class_table_aa0d99400a873ac7ef312224058d506e8}\label{class_table_aa0d99400a873ac7ef312224058d506e8} 
+\index{Table@{Table}!getNumber@{getNumber}}
+\index{getNumber@{getNumber}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getNumber()}{getNumber()}}
+{\footnotesize\ttfamily Table\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of a table. 
+
+\begin{DoxyReturn}{Returns}
+The number of a table 
+\end{DoxyReturn}
+\Hypertarget{class_table_a45c1770766e257fc08ef530c96e21c65}\label{class_table_a45c1770766e257fc08ef530c96e21c65} 
+\index{Table@{Table}!getPrevious@{getPrevious}}
+\index{getPrevious@{getPrevious}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getPrevious()}{getPrevious()}}
+{\footnotesize\ttfamily Table\+::get\+Previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the previous attribute of a table. 
+
+\begin{DoxyReturn}{Returns}
+The table that is previous in the list 
+\end{DoxyReturn}
+\Hypertarget{class_table_a969f7afdade23b3eb84bc4955caaf636}\label{class_table_a969f7afdade23b3eb84bc4955caaf636} 
+\index{Table@{Table}!getSize@{getSize}}
+\index{getSize@{getSize}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily Table\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the size of a table. 
+
+\begin{DoxyReturn}{Returns}
+The size of a table 
+\end{DoxyReturn}
+\Hypertarget{class_table_a75624b972cccf42cec88168188f26ca7}\label{class_table_a75624b972cccf42cec88168188f26ca7} 
+\index{Table@{Table}!getWaiter@{getWaiter}}
+\index{getWaiter@{getWaiter}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getWaiter()}{getWaiter()}}
+{\footnotesize\ttfamily Table\+::get\+Waiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the waiter attribute of a table. 
+
+\begin{DoxyReturn}{Returns}
+The waiter that is assigned to this table 
+\end{DoxyReturn}
+\Hypertarget{class_table_a344e009db709ed44a259cf1633556c6e}\label{class_table_a344e009db709ed44a259cf1633556c6e} 
+\index{Table@{Table}!setAvailable@{setAvailable}}
+\index{setAvailable@{setAvailable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setAvailable()}{setAvailable()}}
+{\footnotesize\ttfamily Table\+::set\+Available (\begin{DoxyParamCaption}\item[{bool}]{available }\end{DoxyParamCaption})}
+
+
+
+Sets the availability of a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available} & The availability of a table \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_table_afff1518e3f4172a5a42375593f55d036}\label{class_table_afff1518e3f4172a5a42375593f55d036} 
+\index{Table@{Table}!setCombinedTable@{setCombinedTable}}
+\index{setCombinedTable@{setCombinedTable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setCombinedTable()}{setCombinedTable()}}
+{\footnotesize\ttfamily Table\+::set\+Combined\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{combined\+Table }\end{DoxyParamCaption})}
+
+
+
+Sets the combined\+Table attribute of a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em combined\+Table} & The table that is combined with this table \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_table_a74cb22dc214c615f2dbe7c96f2b4f331}\label{class_table_a74cb22dc214c615f2dbe7c96f2b4f331} 
+\index{Table@{Table}!setNext@{setNext}}
+\index{setNext@{setNext}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setNext()}{setNext()}}
+{\footnotesize\ttfamily Table\+::set\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{next }\end{DoxyParamCaption})}
+
+
+
+Sets the next attribute of a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next} & The table that is next in the list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_table_a5799683b165b621060d389e46bfeefea}\label{class_table_a5799683b165b621060d389e46bfeefea} 
+\index{Table@{Table}!setPrevious@{setPrevious}}
+\index{setPrevious@{setPrevious}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setPrevious()}{setPrevious()}}
+{\footnotesize\ttfamily Table\+::set\+Previous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{previous }\end{DoxyParamCaption})}
+
+
+
+Sets the previous attribute of a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em previous} & The table that is previous in the list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_table_a221b2af1ec3cfa8dfdbfb47a2c9968eb}\label{class_table_a221b2af1ec3cfa8dfdbfb47a2c9968eb} 
+\index{Table@{Table}!setWaiter@{setWaiter}}
+\index{setWaiter@{setWaiter}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setWaiter()}{setWaiter()}}
+{\footnotesize\ttfamily Table\+::set\+Waiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}}]{waiter }\end{DoxyParamCaption})}
+
+
+
+Sets the waiter attribute of a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiter} & The waiter that is assigned to this table \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_table_ae6f7cce816550a40abcbb1c1e5238196}\label{class_table_ae6f7cce816550a40abcbb1c1e5238196} 
+\index{Table@{Table}!combined@{combined}}
+\index{combined@{combined}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{combined}{combined}}
+{\footnotesize\ttfamily bool Table\+::combined}
+
+Indicates if a table is combined with another table 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Table.\+h\item 
+Table.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{Chef Class Reference}
+\hypertarget{class_chef}{}\label{class_chef}\index{Chef@{Chef}}
+Inheritance diagram for Chef\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_chef}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chef_a3c3476bb0c0ce2a69002f922ea68922d}\label{class_chef_a3c3476bb0c0ce2a69002f922ea68922d} 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Order} ()
+\item 
+\Hypertarget{class_chef_a8ae9ec0f330a98633eb83fd5b73e1233}\label{class_chef_a8ae9ec0f330a98633eb83fd5b73e1233} 
+void {\bfseries set\+Order} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}order)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Successor} ()
+\item 
+void {\bfseries set\+Successor} (\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}successor)
+\item 
+virtual void {\bfseries handle\+Request} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Mediator} ()
+\item 
+void {\bfseries set\+Mediator} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}w)
+\item 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chef_a3f19cc251e5aae5602ccb65b5e105631}\label{class_chef_a3f19cc251e5aae5602ccb65b5e105631} 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+Order}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries successor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries max\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Chef.\+h\item 
+Chef.\+cpp\end{DoxyCompactItemize}

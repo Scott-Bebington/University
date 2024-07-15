@@ -1,0 +1,40 @@
+\hypertarget{classRequestNonseToken}{}\doxysection{Request\+Nonse\+Token Class Reference}
+\label{classRequestNonseToken}\index{RequestNonseToken@{RequestNonseToken}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRequestNonseToken_af752de8e58731015ade901bc225b93aa}{Request\+Nonse\+Token}} (\mbox{\hyperlink{classUser}{User}} $\ast$user, string Request, \mbox{\hyperlink{classServer}{Server}} $\ast$server)
+\item 
+string \mbox{\hyperlink{classRequestNonseToken_a2707f637386ef17457fe63dde7b42165}{generate\+Nonse\+Token}} ()
+\item 
+\mbox{\Hypertarget{classRequestNonseToken_a5436999676596d114a4cc0a50f0e2c05}\label{classRequestNonseToken_a5436999676596d114a4cc0a50f0e2c05}} 
+void {\bfseries No\+Warning} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRequestNonseToken_af752de8e58731015ade901bc225b93aa}\label{classRequestNonseToken_af752de8e58731015ade901bc225b93aa}} 
+\index{RequestNonseToken@{RequestNonseToken}!RequestNonseToken@{RequestNonseToken}}
+\index{RequestNonseToken@{RequestNonseToken}!RequestNonseToken@{RequestNonseToken}}
+\doxysubsubsection{\texorpdfstring{RequestNonseToken()}{RequestNonseToken()}}
+{\footnotesize\ttfamily Request\+Nonse\+Token\+::\+Request\+Nonse\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{user,  }\item[{string}]{Request,  }\item[{\mbox{\hyperlink{classServer}{Server}} $\ast$}]{server }\end{DoxyParamCaption})}
+
+Checking to see if the user is requesting a nonse token
+
+If the user is requesting a token then generate a nonse token and assign it to the user
+
+If the user is not requesting a token then pass the request onto the signin handler to see if the user wants to sign in
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRequestNonseToken_a2707f637386ef17457fe63dde7b42165}\label{classRequestNonseToken_a2707f637386ef17457fe63dde7b42165}} 
+\index{RequestNonseToken@{RequestNonseToken}!generateNonseToken@{generateNonseToken}}
+\index{generateNonseToken@{generateNonseToken}!RequestNonseToken@{RequestNonseToken}}
+\doxysubsubsection{\texorpdfstring{generateNonseToken()}{generateNonseToken()}}
+{\footnotesize\ttfamily string Request\+Nonse\+Token\+::generate\+Nonse\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates a 10 character alphanumeric nonse token
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Request\+Nonse\+Token.\+h\item 
+Request\+Nonse\+Token.\+cpp\end{DoxyCompactItemize}

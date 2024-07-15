@@ -1,0 +1,42 @@
+\doxysection{Category\+Chef.\+h}
+\hypertarget{_category_chef_8h_source}{}\label{_category_chef_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Chef.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Meal.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_category_chef}{CategoryChef}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_chef}{Chef}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ category;}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}\ *meal;}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_category_chef}{CategoryChef}}*\ nextChef;}
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ categories[9]\ =\ \{\textcolor{stringliteral}{"{}meat"{}},\ \textcolor{stringliteral}{"{}fish"{}},\ \textcolor{stringliteral}{"{}pizza"{}},\ \textcolor{stringliteral}{"{}fry"{}},\ \textcolor{stringliteral}{"{}burger"{}},\ \textcolor{stringliteral}{"{}pastry"{}},\ \textcolor{stringliteral}{"{}pasta"{}},\ \textcolor{stringliteral}{"{}salads"{}},\ \textcolor{stringliteral}{"{}drinks"{}}\};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_category_chef}{CategoryChef}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_category_chef}{CategoryChef}}(\textcolor{keywordtype}{int}\ cat);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ getCategory()\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>category;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ setCategory(\textcolor{keywordtype}{int}\ cat)\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ this-\/>category\ =\ cat;}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_category_chef_a359f2c8c69a6208824af304d87c72fe1}{prepare}}(\mbox{\hyperlink{class_meal}{Meal}}\ *meal);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_meal}{Meal}}\ *getMeal();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ handleRequest(\mbox{\hyperlink{class_meal}{Meal}}\ *meal);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setNextChef(\mbox{\hyperlink{class_category_chef}{CategoryChef}}*\ nextChef)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ this-\/>nextChef\ =\ nextChef;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_category_chef}{CategoryChef}}*\ getNextChef()\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>nextChef;}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ void\ notify(Table*);}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ void\ notify(Order\ *);}}
+\DoxyCodeLine{00037\ \};}
+
+\end{DoxyCode}

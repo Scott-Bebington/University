@@ -1,0 +1,206 @@
+\doxysection{Floor Class Reference}
+\hypertarget{class_floor}{}\label{class_floor}\index{Floor@{Floor}}
+
+
+A \doxylink{class_floor}{Floor} class.  
+
+
+
+
+{\ttfamily \#include $<$Floor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_floor_a15a9700e363e8a23c9181f2edce783f9}\label{class_floor_a15a9700e363e8a23c9181f2edce783f9} 
+void {\bfseries add\+Table} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_ac8e1a5aa68523afea71e34cf745960ca}{remove}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Removes a table from the list of tables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_aa0d37ede003f62d739edc6c80d509c1a}{combine}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table1, \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table2)
+\begin{DoxyCompactList}\small\item\em Combines two tables. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_floor_a86b28da752efc6e4a5e51d677f7f85ac}{split}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Splits a table into two. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_floor_a617b3c2a4a98a67a0d23309207562091}{detach}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Detaches a table from an employee. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_floor_acb82a9d17269e087cbce6f3b6e3b1c8d}{attach}} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}waiter, \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Assigns a waiter to a table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_aefba17c689b71397fd2be36119c72f79}{get\+First\+Available\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the first available table. \end{DoxyCompactList}\item 
+\Hypertarget{class_floor_aa8714fee3e6f91f3497b369765e7017c}\label{class_floor_aa8714fee3e6f91f3497b369765e7017c} 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} {\bfseries combine\+Tables\+Num\+People} (int num\+People)
+\item 
+int \mbox{\hyperlink{class_floor_a92118e01831bed06fa08b7afda9a5884}{get\+Available\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of available seats. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_floor_addeb863ecb961dfc964205b0e0e7bfe7}{get\+Available\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of available tables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_acddb78505e26d37f0e0e1c1fca219459}{get\+Available\+For\+Num\+People}} (int num\+People)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the first available table for a given number of people. \end{DoxyCompactList}\item 
+\Hypertarget{class_floor_a9494c8c2ffa559a575cbab701c3496cc}\label{class_floor_a9494c8c2ffa559a575cbab701c3496cc} 
+void {\bfseries update\+Availability} ()
+\begin{DoxyCompactList}\small\item\em Updates the number of available tables. \end{DoxyCompactList}\item 
+\Hypertarget{class_floor_ae1b805579f18a76fe2754a3601202e80}\label{class_floor_ae1b805579f18a76fe2754a3601202e80} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Floor} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \doxylink{class_floor}{Floor} class. 
+
+This class represents a floor in a restaurant. It contains a list of tables and a \doxylink{class_maitre_d}{MaitreD}. \begin{DoxyAuthor}{Author}
+Alcodeholics Anonymous 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_floor_acb82a9d17269e087cbce6f3b6e3b1c8d}\label{class_floor_acb82a9d17269e087cbce6f3b6e3b1c8d} 
+\index{Floor@{Floor}!attach@{attach}}
+\index{attach@{attach}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily Floor\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}}]{waiter,  }\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})}
+
+
+
+Assigns a waiter to a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_waiter}{Waiter}} & A pointer to the waiter to be attached to. \\
+\hline
+{\em table} & A pointer to the table to be attached. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_floor_aa0d37ede003f62d739edc6c80d509c1a}\label{class_floor_aa0d37ede003f62d739edc6c80d509c1a} 
+\index{Floor@{Floor}!combine@{combine}}
+\index{combine@{combine}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{combine()}{combine()}}
+{\footnotesize\ttfamily Floor\+::combine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table1,  }\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table2 }\end{DoxyParamCaption})}
+
+
+
+Combines two tables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table1} & A pointer to the first table to be combined. \\
+\hline
+{\em table2} & A pointer to the second table to be combined. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the combined table. 
+\end{DoxyReturn}
+\Hypertarget{class_floor_a617b3c2a4a98a67a0d23309207562091}\label{class_floor_a617b3c2a4a98a67a0d23309207562091} 
+\index{Floor@{Floor}!detach@{detach}}
+\index{detach@{detach}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily Floor\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})}
+
+
+
+Detaches a table from an employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & A pointer to the table to be detached. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_floor_acddb78505e26d37f0e0e1c1fca219459}\label{class_floor_acddb78505e26d37f0e0e1c1fca219459} 
+\index{Floor@{Floor}!getAvailableForNumPeople@{getAvailableForNumPeople}}
+\index{getAvailableForNumPeople@{getAvailableForNumPeople}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{getAvailableForNumPeople()}{getAvailableForNumPeople()}}
+{\footnotesize\ttfamily Floor\+::get\+Available\+For\+Num\+People (\begin{DoxyParamCaption}\item[{int}]{num\+People }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the first available table for a given number of people. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+People} & The number of people. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the first available table for a given number of people. 
+\end{DoxyReturn}
+\Hypertarget{class_floor_a92118e01831bed06fa08b7afda9a5884}\label{class_floor_a92118e01831bed06fa08b7afda9a5884} 
+\index{Floor@{Floor}!getAvailableSeats@{getAvailableSeats}}
+\index{getAvailableSeats@{getAvailableSeats}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{getAvailableSeats()}{getAvailableSeats()}}
+{\footnotesize\ttfamily Floor\+::get\+Available\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of available seats. 
+
+\begin{DoxyReturn}{Returns}
+The number of available seats. 
+\end{DoxyReturn}
+\Hypertarget{class_floor_addeb863ecb961dfc964205b0e0e7bfe7}\label{class_floor_addeb863ecb961dfc964205b0e0e7bfe7} 
+\index{Floor@{Floor}!getAvailableTables@{getAvailableTables}}
+\index{getAvailableTables@{getAvailableTables}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{getAvailableTables()}{getAvailableTables()}}
+{\footnotesize\ttfamily Floor\+::get\+Available\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of available tables. 
+
+\begin{DoxyReturn}{Returns}
+The number of available tables. 
+\end{DoxyReturn}
+\Hypertarget{class_floor_aefba17c689b71397fd2be36119c72f79}\label{class_floor_aefba17c689b71397fd2be36119c72f79} 
+\index{Floor@{Floor}!getFirstAvailableTable@{getFirstAvailableTable}}
+\index{getFirstAvailableTable@{getFirstAvailableTable}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{getFirstAvailableTable()}{getFirstAvailableTable()}}
+{\footnotesize\ttfamily Floor\+::get\+First\+Available\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the first available table. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the first available table. 
+\end{DoxyReturn}
+\Hypertarget{class_floor_ac8e1a5aa68523afea71e34cf745960ca}\label{class_floor_ac8e1a5aa68523afea71e34cf745960ca} 
+\index{Floor@{Floor}!remove@{remove}}
+\index{remove@{remove}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily Floor\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})}
+
+
+
+Removes a table from the list of tables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & A pointer to the table to be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the removed table. 
+\end{DoxyReturn}
+\Hypertarget{class_floor_a86b28da752efc6e4a5e51d677f7f85ac}\label{class_floor_a86b28da752efc6e4a5e51d677f7f85ac} 
+\index{Floor@{Floor}!split@{split}}
+\index{split@{split}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily Floor\+::split (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})}
+
+
+
+Splits a table into two. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & A pointer to the table to be split. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the table was split successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Floor.\+h\item 
+Floor.\+cpp\end{DoxyCompactItemize}

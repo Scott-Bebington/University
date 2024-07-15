@@ -1,0 +1,29 @@
+\doxysection{Floor.\+h}
+\hypertarget{_floor_8h_source}{}\label{_floor_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Waiter.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table}{Table}};}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_floor}{Floor}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ head;\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ availableTables\ =\ 0;\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ addTable(\mbox{\hyperlink{class_table}{Table}}*\ table);}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_floor_ac8e1a5aa68523afea71e34cf745960ca}{remove}}(\mbox{\hyperlink{class_table}{Table}}*\ table);}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_floor_aa0d37ede003f62d739edc6c80d509c1a}{combine}}(\mbox{\hyperlink{class_table}{Table}}*\ table1,\ \mbox{\hyperlink{class_table}{Table}}*\ table2);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_floor_a86b28da752efc6e4a5e51d677f7f85ac}{split}}(\mbox{\hyperlink{class_table}{Table}}*\ table);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_floor_a617b3c2a4a98a67a0d23309207562091}{detach}}(\mbox{\hyperlink{class_table}{Table}}*\ table);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_floor_acb82a9d17269e087cbce6f3b6e3b1c8d}{attach}}(\mbox{\hyperlink{class_waiter}{Waiter}}*\ waiter,\ \mbox{\hyperlink{class_table}{Table}}*\ table);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_floor_aefba17c689b71397fd2be36119c72f79}{getFirstAvailableTable}}();}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ combineTablesNumPeople(\textcolor{keywordtype}{int}\ numPeople);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_floor_a92118e01831bed06fa08b7afda9a5884}{getAvailableSeats}}();}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_floor_addeb863ecb961dfc964205b0e0e7bfe7}{getAvailableTables}}();}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_floor_acddb78505e26d37f0e0e1c1fca219459}{getAvailableForNumPeople}}(\textcolor{keywordtype}{int}\ numPeople);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_floor_a9494c8c2ffa559a575cbab701c3496cc}{updateAvailability}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_floor_ae1b805579f18a76fe2754a3601202e80}{\string~Floor}}();}
+\DoxyCodeLine{00086\ \};}
+
+\end{DoxyCode}

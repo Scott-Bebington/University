@@ -1,0 +1,23 @@
+\doxysection{Person.\+h}
+\hypertarget{_person_8h_source}{}\label{_person_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \#include\ "{}Waiter.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_order}{Order}};}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_waiter}{Waiter}};}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_person}{Person}}\{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_waiter}{Waiter}}\ *mediator;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ maxId;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_person}{Person}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_person}{\string~Person}}();}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_waiter}{Waiter}}*\ getMediator();}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ setMediator(\mbox{\hyperlink{class_waiter}{Waiter}}*\ w);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ getID()\ \{\ \textcolor{keywordflow}{return}\ id;\ \}}
+\DoxyCodeLine{00018\ \};}
+
+\end{DoxyCode}

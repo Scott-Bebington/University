@@ -16,6 +16,7 @@ public:
     void outputUsers();
     void makeRequest(User*, string, Server*);
     User* getUser(string);
+    void NoWarning() {}
     list<User*> Users;
 private:
     string NonseToken;

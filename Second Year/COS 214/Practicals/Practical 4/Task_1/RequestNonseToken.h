@@ -13,6 +13,7 @@ class RequestNonseToken
 public:
     RequestNonseToken(User *user, string Request, Server *server);
     string generateNonseToken();
+    void NoWarning() {}
 private:
     string NonseToken;
 };

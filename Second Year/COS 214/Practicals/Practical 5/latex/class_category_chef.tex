@@ -1,0 +1,115 @@
+\doxysection{Category\+Chef Class Reference}
+\hypertarget{class_category_chef}{}\label{class_category_chef}\index{CategoryChef@{CategoryChef}}
+Inheritance diagram for Category\+Chef\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_category_chef}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_category_chef_aed1ea57f2f863d03a4421142388fd259}\label{class_category_chef_aed1ea57f2f863d03a4421142388fd259} 
+{\bfseries Category\+Chef} (int cat)
+\item 
+\Hypertarget{class_category_chef_a8b5fe695181559f46957e922bc92811c}\label{class_category_chef_a8b5fe695181559f46957e922bc92811c} 
+int {\bfseries get\+Category} ()
+\item 
+\Hypertarget{class_category_chef_a1b3c30809eeda3113218e43e26fc1817}\label{class_category_chef_a1b3c30809eeda3113218e43e26fc1817} 
+void {\bfseries set\+Category} (int cat)
+\item 
+void \mbox{\hyperlink{class_category_chef_a359f2c8c69a6208824af304d87c72fe1}{prepare}} (\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}meal)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_order}{Order} has been delegated to this chef. The chef prepares the meal and sets the meal to the finished meal. \end{DoxyCompactList}\item 
+\Hypertarget{class_category_chef_a5cdf98f24a8b9012a6873e4487557f65}\label{class_category_chef_a5cdf98f24a8b9012a6873e4487557f65} 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Meal} ()
+\item 
+\Hypertarget{class_category_chef_aa191df4b30795122cc26cad5c47fb1b2}\label{class_category_chef_aa191df4b30795122cc26cad5c47fb1b2} 
+void {\bfseries handle\+Request} (\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}meal)
+\item 
+\Hypertarget{class_category_chef_a2a63cc77b2a71af19cfa77d3298b7718}\label{class_category_chef_a2a63cc77b2a71af19cfa77d3298b7718} 
+void {\bfseries set\+Next\+Chef} (\mbox{\hyperlink{class_category_chef}{Category\+Chef}} \texorpdfstring{$\ast$}{*}next\+Chef)
+\item 
+\Hypertarget{class_category_chef_afd853b556b549857d147e5083f0fa97c}\label{class_category_chef_afd853b556b549857d147e5083f0fa97c} 
+\mbox{\hyperlink{class_category_chef}{Category\+Chef}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Next\+Chef} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_chef}{Chef}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Order} ()
+\item 
+void {\bfseries set\+Order} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}order)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Successor} ()
+\item 
+void {\bfseries set\+Successor} (\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}successor)
+\item 
+virtual void {\bfseries handle\+Request} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Mediator} ()
+\item 
+void {\bfseries set\+Mediator} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}w)
+\item 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_category_chef_a3d8518bdc3e64db5856d2e672c76862b}\label{class_category_chef_a3d8518bdc3e64db5856d2e672c76862b} 
+string {\bfseries categories} \mbox{[}9\mbox{]} = \{"{}meat"{}, "{}fish"{}, "{}pizza"{}, "{}fry"{}, "{}burger"{}, "{}pastry"{}, "{}pasta"{}, "{}salads"{}, "{}drinks"{}\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_chef}{Chef}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+Order}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries successor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries max\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_category_chef_a359f2c8c69a6208824af304d87c72fe1}\label{class_category_chef_a359f2c8c69a6208824af304d87c72fe1} 
+\index{CategoryChef@{CategoryChef}!prepare@{prepare}}
+\index{prepare@{prepare}!CategoryChef@{CategoryChef}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily void Category\+Chef\+::prepare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}}]{\+\_\+meal }\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_order}{Order} has been delegated to this chef. The chef prepares the meal and sets the meal to the finished meal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em meal} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Category\+Chef.\+h\item 
+Category\+Chef.\+cpp\end{DoxyCompactItemize}

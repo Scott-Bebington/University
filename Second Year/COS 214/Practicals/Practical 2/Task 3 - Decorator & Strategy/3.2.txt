@@ -1,0 +1,4 @@
+The decorator can be altered to use testable as its internal testBed where testBed is using the testable interface. This allows it to run tests of both the decorator and testBed synomously allowing for decorator chaining.
+The beforeTest will be of type testable and will print something before the testable is run in this case the testBed. 
+The afterTest will be of type testable and will print something after the testable is run in this case the testable is the beforeTest.
+The beforeTest could set up the string to the correct format for the calculator and the afterTest could print the result of the calculation.

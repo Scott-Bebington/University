@@ -1,0 +1,40 @@
+\doxysection{Table.\+h}
+\hypertarget{_table_8h_source}{}\label{_table_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_floor}{Floor}};}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_waiter}{Waiter}};}
+\DoxyCodeLine{00005\ \textcolor{comment}{//generate\ doxygen\ comments}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table}{Table}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ available;\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ number;\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ size;\ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_waiter}{Waiter}}*\ waiter;\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_floor}{Floor}}*\ floor;\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}\ *next;\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}\ *previous;\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ combinedTable;\ }
+\DoxyCodeLine{00026\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_table_ae6f7cce816550a40abcbb1c1e5238196}{combined}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_table_afff1518e3f4172a5a42375593f55d036}{setCombinedTable}}(\mbox{\hyperlink{class_table}{Table}}*\ combinedTable);}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_table_a0097e07cb925c3392e2b1a0abde31fbf}{getCombinedTable}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_table_a221b2af1ec3cfa8dfdbfb47a2c9968eb}{setWaiter}}(\mbox{\hyperlink{class_waiter}{Waiter}}*\ waiter);}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_waiter}{Waiter}}*\ \mbox{\hyperlink{class_table_a75624b972cccf42cec88168188f26ca7}{getWaiter}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_table_a74cb22dc214c615f2dbe7c96f2b4f331}{setNext}}(\mbox{\hyperlink{class_table}{Table}}*\ next);}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_table_a13054bcd80395b3eb8684d06e8faa101}{getNext}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_table_a5799683b165b621060d389e46bfeefea}{setPrevious}}(\mbox{\hyperlink{class_table}{Table}}*\ previous);}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_table_a45c1770766e257fc08ef530c96e21c65}{getPrevious}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_table_a344e009db709ed44a259cf1633556c6e}{setAvailable}}(\textcolor{keywordtype}{bool}\ available);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_table_ab52ff668157b52ce2d7bc2368e2b5953}{getAvailable}}();}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_table_a969f7afdade23b3eb84bc4955caaf636}{getSize}}();}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_table_aa0d99400a873ac7ef312224058d506e8}{getNumber}}();}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}(\textcolor{keywordtype}{int}\ size,\ \textcolor{keywordtype}{bool}\ available,\ \textcolor{keywordtype}{int}\ number);}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}(\textcolor{keywordtype}{int}\ size,\ \textcolor{keywordtype}{bool}\ available,\ \textcolor{keywordtype}{int}\ number,\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_table_ae6f7cce816550a40abcbb1c1e5238196}{combined}},\ \mbox{\hyperlink{class_table}{Table}}*\ combinedTable);}
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{class_table_a9a559f2e7beb37b511ee9f88873164f8}{\string~Table}}();}
+\DoxyCodeLine{00112\ \};}
+
+\end{DoxyCode}

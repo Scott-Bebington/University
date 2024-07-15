@@ -1,0 +1,105 @@
+\doxysection{Waiter Class Reference}
+\hypertarget{class_waiter}{}\label{class_waiter}\index{Waiter@{Waiter}}
+Inheritance diagram for Waiter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_waiter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_waiter_a339ffc7199e67fccb520199e0cd8cf50}\label{class_waiter_a339ffc7199e67fccb520199e0cd8cf50} 
+{\bfseries Waiter} (\mbox{\hyperlink{class_database}{Database}} \texorpdfstring{$\ast$}{*}db)
+\item 
+\Hypertarget{class_waiter_a59d5e1d7dc2687b1b45b87c8db0916e7}\label{class_waiter_a59d5e1d7dc2687b1b45b87c8db0916e7} 
+void {\bfseries take\+Order} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+\Hypertarget{class_waiter_a47d1677676692351a05379d756004f62}\label{class_waiter_a47d1677676692351a05379d756004f62} 
+void {\bfseries deliver\+Order} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+void \mbox{\hyperlink{class_waiter_a2fd216eb5daf3159381e78152ad173a5}{notify}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+\Hypertarget{class_waiter_a90eed4ecc22cec5cc69350a224741781}\label{class_waiter_a90eed4ecc22cec5cc69350a224741781} 
+void {\bfseries notify\+Table\+Available} ()
+\item 
+\Hypertarget{class_waiter_a4e8e32c2d1ad48eee77635025bbb231d}\label{class_waiter_a4e8e32c2d1ad48eee77635025bbb231d} 
+void {\bfseries notify} (bool method, \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+\Hypertarget{class_waiter_a8e309d9e471a62f023c993a6319afa55}\label{class_waiter_a8e309d9e471a62f023c993a6319afa55} 
+void {\bfseries add\+To\+Tab} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+\Hypertarget{class_waiter_a3493704a08bee64f4dfef0cce7c84470}\label{class_waiter_a3493704a08bee64f4dfef0cce7c84470} 
+void {\bfseries pay\+Tab} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+\Hypertarget{class_waiter_a185d0901bfcc596c2dca83e8b6444447}\label{class_waiter_a185d0901bfcc596c2dca83e8b6444447} 
+void {\bfseries create\+Order} (\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}c)
+\item 
+void \mbox{\hyperlink{class_waiter_aa30f8d967864290646f98fb716bda786}{handle\+Request}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{class_waiter_a73212ecdcc4ee8d495b19b26c15b4136}\label{class_waiter_a73212ecdcc4ee8d495b19b26c15b4136} 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Successor} ()
+\item 
+void {\bfseries set\+Successor} (\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}successor)
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Mediator} ()
+\item 
+void {\bfseries set\+Mediator} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}w)
+\item 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries successor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries max\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_waiter_aa30f8d967864290646f98fb716bda786}\label{class_waiter_aa30f8d967864290646f98fb716bda786} 
+\index{Waiter@{Waiter}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Waiter\+::handle\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee}{Employee}}.
+
+\Hypertarget{class_waiter_a2fd216eb5daf3159381e78152ad173a5}\label{class_waiter_a2fd216eb5daf3159381e78152ad173a5} 
+\index{Waiter@{Waiter}!notify@{notify}}
+\index{notify@{notify}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Waiter\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waiter.\+h\item 
+Waiter.\+cpp\end{DoxyCompactItemize}

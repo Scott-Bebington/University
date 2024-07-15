@@ -1,0 +1,85 @@
+\doxysection{MaitreD Class Reference}
+\hypertarget{class_maitre_d}{}\label{class_maitre_d}\index{MaitreD@{MaitreD}}
+Inheritance diagram for MaitreD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_maitre_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_maitre_d_a732d17d1078c2c991f5f2c45669946c3}\label{class_maitre_d_a732d17d1078c2c991f5f2c45669946c3} 
+{\bfseries MaitreD} (\mbox{\hyperlink{class_floor}{Floor}} \texorpdfstring{$\ast$}{*}f)
+\item 
+\Hypertarget{class_maitre_d_a68a31a800461b71291fbba45cfe3f784}\label{class_maitre_d_a68a31a800461b71291fbba45cfe3f784} 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} {\bfseries seat} (\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}c)
+\item 
+\Hypertarget{class_maitre_d_ab898abbe6ca49203bda234033186acde}\label{class_maitre_d_ab898abbe6ca49203bda234033186acde} 
+void {\bfseries add\+Booking} (\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}c)
+\item 
+\Hypertarget{class_maitre_d_a1b745f8292c97a3c3d9b7225275d6b1f}\label{class_maitre_d_a1b745f8292c97a3c3d9b7225275d6b1f} 
+void {\bfseries add\+Queue} (\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}c)
+\item 
+\Hypertarget{class_maitre_d_a1547e9ad15fd608ebba891693069ee14}\label{class_maitre_d_a1547e9ad15fd608ebba891693069ee14} 
+bool {\bfseries check\+Availability} ()
+\item 
+\Hypertarget{class_maitre_d_acde8f8840804bd5867be7aa22a9515d8}\label{class_maitre_d_acde8f8840804bd5867be7aa22a9515d8} 
+bool {\bfseries remove\+Booking} (\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}c)
+\item 
+\Hypertarget{class_maitre_d_a80d339bcb5bc8e097e7c3855e9605697}\label{class_maitre_d_a80d339bcb5bc8e097e7c3855e9605697} 
+bool {\bfseries combine} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}t1, \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}t2)
+\item 
+\Hypertarget{class_maitre_d_ad2e210f49cacdd996a53d4973305f210}\label{class_maitre_d_ad2e210f49cacdd996a53d4973305f210} 
+bool {\bfseries split} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{class_maitre_d_a59eb7b696c3c7bb5c1b15d7e82046813}\label{class_maitre_d_a59eb7b696c3c7bb5c1b15d7e82046813} 
+void {\bfseries assign\+Waiter} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}w, \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{class_maitre_d_ad0729edcf935eba988fc5a2a7fd2060f}\label{class_maitre_d_ad0729edcf935eba988fc5a2a7fd2060f} 
+void {\bfseries notify} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Successor} ()
+\item 
+void {\bfseries set\+Successor} (\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}successor)
+\item 
+virtual void {\bfseries handle\+Request} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Mediator} ()
+\item 
+void {\bfseries set\+Mediator} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}w)
+\item 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries successor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries max\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Maitre\+D.\+h\item 
+Maitre\+D.\+cpp\end{DoxyCompactItemize}

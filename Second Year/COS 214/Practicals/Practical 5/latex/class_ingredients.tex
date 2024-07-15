@@ -1,0 +1,123 @@
+\doxysection{Ingredients Class Reference}
+\hypertarget{class_ingredients}{}\label{class_ingredients}\index{Ingredients@{Ingredients}}
+Inheritance diagram for Ingredients\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ingredients}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ingredients_a70c5b4dcd66a4cb86c84cf21425d816a}\label{class_ingredients_a70c5b4dcd66a4cb86c84cf21425d816a} 
+{\bfseries Ingredients} (string ingre)
+\item 
+\Hypertarget{class_ingredients_ab019332c30737bb40d772455c2163972}\label{class_ingredients_ab019332c30737bb40d772455c2163972} 
+void {\bfseries set\+Next} (\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}next\+Meal)
+\item 
+\Hypertarget{class_ingredients_ac1f42438dbb8b4dd942c8a21def1190b}\label{class_ingredients_ac1f42438dbb8b4dd942c8a21def1190b} 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Next} ()
+\item 
+\Hypertarget{class_ingredients_af5f1106c6f5032a0afbeb5656125479b}\label{class_ingredients_af5f1106c6f5032a0afbeb5656125479b} 
+void {\bfseries remove\+Next} ()
+\item 
+string \mbox{\hyperlink{class_ingredients_a595dba154ff5e4a97c45f46812ce4bd6}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ingredients_ab28993b909ad304abd9ca756a86da3f0}{get\+Child}} (int child)
+\item 
+int \mbox{\hyperlink{class_ingredients_a383cb0da5822d604557bdd2984bff117}{get\+Category}} ()
+\item 
+int \mbox{\hyperlink{class_ingredients_a5c6eab1d969954958e8f9b8557524c8e}{get\+Min}} ()
+\item 
+int \mbox{\hyperlink{class_ingredients_af2b12b7b36c12dd6ea21e82a1ced36e1}{get\+Max}} ()
+\item 
+int \mbox{\hyperlink{class_ingredients_a13642c1a9bdf13cc10a54d5dba6c608d}{get\+Cost}} ()
+\item 
+\Hypertarget{class_ingredients_a339384362106ba1a9265cf156b356a58}\label{class_ingredients_a339384362106ba1a9265cf156b356a58} 
+int {\bfseries get\+Amount\+Ingredients} ()
+\item 
+\Hypertarget{class_ingredients_a967b98b5c508a923746292edadf674f6}\label{class_ingredients_a967b98b5c508a923746292edadf674f6} 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+This\+Meal} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_meal}{Meal}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+Next} (\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*}meal)
+\item 
+\mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Next} ()
+\item 
+virtual \mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Meal} ()
+\item 
+virtual void {\bfseries add} (\mbox{\hyperlink{class_meal}{Meal}} m)
+\item 
+virtual void {\bfseries remove} (\mbox{\hyperlink{class_meal}{Meal}} m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ingredients_a383cb0da5822d604557bdd2984bff117}\label{class_ingredients_a383cb0da5822d604557bdd2984bff117} 
+\index{Ingredients@{Ingredients}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Ingredients@{Ingredients}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily int Ingredients\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_ingredients_ab28993b909ad304abd9ca756a86da3f0}\label{class_ingredients_ab28993b909ad304abd9ca756a86da3f0} 
+\index{Ingredients@{Ingredients}!getChild@{getChild}}
+\index{getChild@{getChild}!Ingredients@{Ingredients}}
+\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_meal}{Meal}} \texorpdfstring{$\ast$}{*} Ingredients\+::get\+Child (\begin{DoxyParamCaption}\item[{int}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_ingredients_a13642c1a9bdf13cc10a54d5dba6c608d}\label{class_ingredients_a13642c1a9bdf13cc10a54d5dba6c608d} 
+\index{Ingredients@{Ingredients}!getCost@{getCost}}
+\index{getCost@{getCost}!Ingredients@{Ingredients}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily int Ingredients\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_ingredients_af2b12b7b36c12dd6ea21e82a1ced36e1}\label{class_ingredients_af2b12b7b36c12dd6ea21e82a1ced36e1} 
+\index{Ingredients@{Ingredients}!getMax@{getMax}}
+\index{getMax@{getMax}!Ingredients@{Ingredients}}
+\doxysubsubsection{\texorpdfstring{getMax()}{getMax()}}
+{\footnotesize\ttfamily int Ingredients\+::get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_ingredients_a5c6eab1d969954958e8f9b8557524c8e}\label{class_ingredients_a5c6eab1d969954958e8f9b8557524c8e} 
+\index{Ingredients@{Ingredients}!getMin@{getMin}}
+\index{getMin@{getMin}!Ingredients@{Ingredients}}
+\doxysubsubsection{\texorpdfstring{getMin()}{getMin()}}
+{\footnotesize\ttfamily int Ingredients\+::get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+\Hypertarget{class_ingredients_a595dba154ff5e4a97c45f46812ce4bd6}\label{class_ingredients_a595dba154ff5e4a97c45f46812ce4bd6} 
+\index{Ingredients@{Ingredients}!getName@{getName}}
+\index{getName@{getName}!Ingredients@{Ingredients}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Ingredients\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_meal}{Meal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ingredients.\+h\item 
+Ingredients.\+cpp\end{DoxyCompactItemize}

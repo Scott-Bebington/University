@@ -1,0 +1,27 @@
+\doxysection{Employee.\+h}
+\hypertarget{_employee_8h_source}{}\label{_employee_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Person.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table}{Table}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_employee}{Employee}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_person}{Person}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ employeeNr;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_employee}{Employee}}\ *successor;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_employee}{Employee}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_employee}{\string~Employee}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_employee}{Employee}}\ *getSuccessor();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ setSuccessor(\mbox{\hyperlink{class_employee}{Employee}}*\ successor);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ handleRequest(\mbox{\hyperlink{class_order}{Order}}*\ o);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ notify(\mbox{\hyperlink{class_table}{Table}}*);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ notify(\mbox{\hyperlink{class_order}{Order}}\ *o);}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+
+\end{DoxyCode}

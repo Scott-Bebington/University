@@ -1,0 +1,150 @@
+\doxysection{Head\+Chef Class Reference}
+\hypertarget{class_head_chef}{}\label{class_head_chef}\index{HeadChef@{HeadChef}}
+Inheritance diagram for Head\+Chef\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_head_chef}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_head_chef_a5e863fcf5612b4513ff446264a25ca67}{start\+Order}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Start the order by setting the order and changing the state of the order to in progress. \end{DoxyCompactList}\item 
+\Hypertarget{class_head_chef_ad0f9f1858e4c14f423576acbdd671b13}\label{class_head_chef_ad0f9f1858e4c14f423576acbdd671b13} 
+void {\bfseries delegate\+Order} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Handle the delegation of the order to the appropriate \doxylink{class_category_chef}{Category\+Chef} based on what the order is. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_head_chef_acec54e7b6909bec957d25efc3dbd1fd6}{plate\+Order}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set the order to the finished order and call the waiter to come and fetch it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_head_chef_a588315b1520022ae9e9a04a9fd0705f9}{handle\+Request}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_head_chef_aac8ee8b605b92e5371d8e37191799c2c}{notify}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}o)
+\item 
+\Hypertarget{class_head_chef_a4815564398898dd84db28432f1c2dcc2}\label{class_head_chef_a4815564398898dd84db28432f1c2dcc2} 
+{\bfseries Head\+Chef} (\mbox{\hyperlink{class_category_chef}{Category\+Chef}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_chef}{Chef}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Order} ()
+\item 
+void {\bfseries set\+Order} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}order)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Successor} ()
+\item 
+void {\bfseries set\+Successor} (\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}successor)
+\item 
+virtual void {\bfseries notify} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Mediator} ()
+\item 
+void {\bfseries set\+Mediator} (\mbox{\hyperlink{class_waiter}{Waiter}} \texorpdfstring{$\ast$}{*}w)
+\item 
+int {\bfseries get\+ID} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_head_chef_acb6804fdcb2a1d1fe01fb9dfef5a71ae}\label{class_head_chef_acb6804fdcb2a1d1fe01fb9dfef5a71ae} 
+static \mbox{\hyperlink{class_head_chef}{Head\+Chef}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Head\+Chef} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_head_chef_a26e5977e755a66cd0f8feffc85635074}\label{class_head_chef_a26e5977e755a66cd0f8feffc85635074} 
+string {\bfseries type} = "{}Head\+Chef"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_head_chef_a21b4385a5c874473566845918ca765e0}\label{class_head_chef_a21b4385a5c874473566845918ca765e0} 
+static \mbox{\hyperlink{class_head_chef}{Head\+Chef}} \texorpdfstring{$\ast$}{*} {\bfseries head\+Chef} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_chef}{Chef}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} {\bfseries cur\+Order}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} {\bfseries successor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_person}{Person}}}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries max\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_head_chef_a588315b1520022ae9e9a04a9fd0705f9}\label{class_head_chef_a588315b1520022ae9e9a04a9fd0705f9} 
+\index{HeadChef@{HeadChef}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Head\+Chef\+::handle\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee}{Employee}}.
+
+\Hypertarget{class_head_chef_aac8ee8b605b92e5371d8e37191799c2c}\label{class_head_chef_aac8ee8b605b92e5371d8e37191799c2c} 
+\index{HeadChef@{HeadChef}!notify@{notify}}
+\index{notify@{notify}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Head\+Chef\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee}{Employee}}.
+
+\Hypertarget{class_head_chef_acec54e7b6909bec957d25efc3dbd1fd6}\label{class_head_chef_acec54e7b6909bec957d25efc3dbd1fd6} 
+\index{HeadChef@{HeadChef}!plateOrder@{plateOrder}}
+\index{plateOrder@{plateOrder}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{plateOrder()}{plateOrder()}}
+{\footnotesize\ttfamily void Head\+Chef\+::plate\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{\+\_\+finished\+Order }\end{DoxyParamCaption})}
+
+
+
+Set the order to the finished order and call the waiter to come and fetch it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+finished\+Order} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_head_chef_a5e863fcf5612b4513ff446264a25ca67}\label{class_head_chef_a5e863fcf5612b4513ff446264a25ca67} 
+\index{HeadChef@{HeadChef}!startOrder@{startOrder}}
+\index{startOrder@{startOrder}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{startOrder()}{startOrder()}}
+{\footnotesize\ttfamily void Head\+Chef\+::start\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{o }\end{DoxyParamCaption})}
+
+
+
+Start the order by setting the order and changing the state of the order to in progress. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Head\+Chef.\+h\item 
+Head\+Chef.\+cpp\end{DoxyCompactItemize}
