@@ -1,0 +1,44 @@
+Lecture 1: PG 1 - PG 18
+Overview to Databases
+
+Lecture 2: PG 19 - PG 39
+Database System Concepts and Architecture
+
+Lecture 3: PG 40 - PG 60
+Entity-Relationship Conceptual Modelling (Part 1)
+
+Lecture 4: PG 61 - PG 78
+Entity-Relationship Conceptual Modelling (Part 2)
+
+Lecture 5: PG 79 - PG 93
+Enhanced Entity-Relationship Modelling (Part 1)
+
+Lecture 6: PG 94 - PG 105
+Enhanced Entity-Relationship Modelling (Part 2)
+
+Lecture 7: PG 106 - PG 116
+DB Design using UML
+
+Lecture 8: PG 117 - PG 142
+Relational Model and Constraints
+
+Lecture 9: PG 143 - PG 172
+Introduction to SQL
+
+Lecture 10: PG 173 - PG 193
+Advanced SQL
+
+Lecture 11: PG 194 - PG 232
+Relational Algebra 1
+
+Lecture 12: PG 233 - PG 249
+Relational Calculus
+
+Lecture 13: PG 250 - PG 265
+(E)ER to Relational Mapping
+
+Lecture 14: PG 94 - PG 105
+(E)ER to Relational Mapping
+
+Lecture 15: PG 266 - PG 295
+SQL Database Programming

@@ -1,0 +1,8 @@
+SELECT s.first_name AS Name, s.last_name AS Surname, a.phone AS Phone, 
+a.address AS Address, a.address2 AS Address_2, a.district AS District, 
+c.city AS City, a.postal_code AS Postal_Code, s.store_id AS Store_ID, 
+s.active AS Active
+FROM sakila.staff s
+JOIN sakila.address a ON s.address_id = a.address_id
+JOIN sakila.city c ON a.city_id = c.city_id
+ORDER BY Name, Surname, Phone, Address, Address_2, District, City, Postal_Code, Store_ID, Active;
