@@ -1,0 +1,7 @@
+
+
+
+javac **/*.java **/*/*.java && 
+jar cvfe COS341_Compiler.jar Main -C src . && 
+java -jar COS341_Compiler.jar && 
+rm **/*.class && rm **/*/*.class

@@ -1,0 +1,82 @@
+Task 1
+Question 1:
+for $student in //students/student
+return (
+  for $course in //courses/course
+  where $course[name = 'Database Systems']
+  where $student/enrollments/course[@code = $course/code]
+  return $student/name
+)
+
+Question 2:
+for $course in //courses/course
+where $course[name = 'Discrete Structures']
+let $students := //students/student/enrollments/course[@code = $course/code]
+return(
+  concat(
+    '<course><name>',
+    $course/name,
+    '</name><total_count>',
+    count($students),
+    '</total_count></course>'
+  )
+) 
+
+Question 3:
+for $course in //courses/course
+where $course[department = 'Mathematics']
+return(
+  $course/name
+) 
+
+Question 4:
+let $MarijkeJooste := //students/student[name = 'Marijke Jooste']
+for $course in $MarijkeJooste/enrollments/course
+let $instructor := //courses/course[code = $course/@code]
+return ($instructor/instructor)
+
+Question 5:
+for $course in //courses/course
+where $course/credits = 18
+return ($course/code)
+
+Question 6:
+let $IntroComSci := //courses/course[name = 'Introduction to Computer Science']
+let $Math124 := //courses/course[name = 'Mathematics 124']
+for $student in //students/student
+where $student/enrollments/course[@code = $IntroComSci/code]
+where $student/enrollments/course[@code = $Math124/code]
+return ($student/name)
+
+Question 7:
+for $student in //students/student
+where not($student/enrollments/course[substring(@code,1,3) = 'WTW'])
+return $student/name
+
+Question 8:
+for $course in //courses/course
+let $studentsEnrolled := //students/student/enrollments/course[@code = $course/code]
+where count($studentsEnrolled) > 3
+return $course/name
+
+Question 9:
+for $course in //courses/course
+let $studentsEnrolled := //students/student/enrollments/course[@code = $course/code]
+where count($studentsEnrolled) > 2
+return $course/instructor
+
+Question 10:
+for $student in //students/student
+where $student/enrollments/course[substring(@code,1,4) = 'COS1']
+order by $student/name descending
+return $student/name
+
+Q10 Option 2:
+for $student in //students/student
+let $enrolledCourses := $student/enrollments/course[@code]
+for $course in //courses/course
+where $course[department = 'Computer Science' and substring(code, 4, 1) = '1']
+where $course/code = $enrolledCourses/@code
+order by $student/name descending
+return $student/name
+

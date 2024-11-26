@@ -1,0 +1,61 @@
+Task 1:
+ai)
+// Create ThreatActor nodes
+CREATE 	(ta1:ThreatActor {name: "APT29", origin: "Russia", motivation: "Espionage"})
+	-[:LAUNCHED {date: date("2023-09-01")}]->
+	(inc1:Incident {name: "Phishing Campaign", type: "Phishing Campaign", severity: "High"}),
+	(strat1:Strategy {name: "User Awareness Training", type: "Preventive"})
+
+// Create ThreatActor nodes
+CREATE 	(ta2:ThreatActor {name: "Lazarus Group", origin: "North Korea", motivation: "Financial Gain"})
+	-[:LAUNCHED {date: date("2023-07-15")}]->
+	(inc2:Incident {name: "Phishing Campaign", type: "Ransomware Attack", severity: "Critical"}),
+	(strat2:Strategy {name: "Network Segmentation", type: "Containment"})
+
+aii)
+MATCH (n) RETURN n
+
+aiii)
+// Match Phishing campaign attack to User awareness training
+MATCH (inc1:Incident {type: "Phishing Campaign", severity: "High"}), (strat1:Strategy {name: "User Awareness Training", type: "Preventive"})
+CREATE (inc1)-[:MITIGATED_BY {effectiveness: "85%"}]->(strat1);
+
+// Match Ransomware attack to Network segmentation
+MATCH (inc2:Incident {type: "Ransomware Attack", severity: "Critical"}), (strat2:Strategy {name: "Network Segmentation", type: "Containment"})
+CREATE (inc2)-[:MITIGATED_BY {effectiveness: "90%"}]->(strat2);
+
+aiv)
+MATCH (n)-[r]->(m)
+RETURN n, r, m;
+
+bi)
+CALL db.labels();
+
+bii)
+MATCH (ta:ThreatActor)
+RETURN ta.name
+ORDER BY ta.name;
+
+biii)
+MATCH (inc:Incident)
+RETURN inc.type, inc.severity
+ORDER BY inc.severity DESC;
+
+biv)
+CALL db.relationshipTypes();
+
+bv)
+MATCH (ta:ThreatActor)-[:LAUNCHED]->(inc:Incident)
+RETURN ta.name AS ThreatActor, COLLECT(inc.type) AS Incidents;
+
+bvi)
+MATCH (inc:Incident)-[:MITIGATED_BY]->(strat:Strategy)
+RETURN inc.type AS Incident, strat.name AS Strategy;
+
+bvii)
+MATCH (inc:Incident)-[mitigated:MITIGATED_BY]->(strat:Strategy)
+RETURN strat.name AS Strategy, mitigated.effectiveness AS Effectiveness
+ORDER BY mitigated.effectiveness DESC
+LIMIT 1;
+
+

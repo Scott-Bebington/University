@@ -1,0 +1,56 @@
+PRINT "Euclid"
+PRINT "Number"
+INPUT v1
+PRINT "Number"
+INPUT v2
+t0 := CALL_f1(v1,v2,0)
+
+v1 := t0
+PRINT "Gcd"
+PRINT v1
+REM END
+END
+REM BEGIN
+FUNCTION f1
+t1 := 0
+v6 := t1
+t2 := v4
+t3 := v5
+IF t2 = t3 THEN L0 ELSE L1
+
+LABEL L0
+f1 := v4
+REM END
+GOTO L2
+LABEL L1
+t4 := v4
+t5 := v5
+IF t4 > t5 THEN L3 ELSE L4
+
+LABEL L3
+t7 := v4
+t8 := v5
+t6 := t7 - t8
+
+v4 := t6
+REM END
+GOTO L5
+LABEL L4
+t10 := v5
+t11 := v4
+t9 := t10 - t11
+
+v5 := t9
+REM END
+LABEL L5
+t12 := CALL_f1(v4,v5,v6)
+
+v6 := t12
+f1 := v6
+REM END
+LABEL L2
+REM END
+END FUNCTION
+REM END
+REM END
+REM END

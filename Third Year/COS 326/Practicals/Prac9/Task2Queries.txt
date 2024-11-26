@@ -1,0 +1,51 @@
+Task 2
+
+1a)
+MATCH (ta:ThreatActor {name: "APT29"})-[:LAUNCHED]->(inc:Incident)
+RETURN inc
+UNION
+MATCH (ta:ThreatActor {name: "APT29"})-[:LAUNCHED]->()-[:MITIGATED_BY]->(inc:Incident)
+RETURN inc
+
+
+1b)
+MATCH path = shortestPath((ta:ThreatActor {name: "APT29"})-[:LAUNCHED|MITIGATED_BY*]->(strat:Strategy {name: "User Awareness Training"}))
+RETURN nodes(path), length(path)
+
+
+1c)
+MATCH (inc:Incident)
+OPTIONAL MATCH (inc)-[:MITIGATED_BY]->(strat:Strategy)
+RETURN inc.type AS IncidentType, 
+       CASE WHEN strat IS NOT NULL THEN true ELSE false END AS HasMitigationStrategy
+
+
+
+1d)
+MATCH path = (n)-[*2]->(m)
+RETURN [node IN nodes(path) | node.name] AS NodeNames, 
+       length(path) AS PathLength
+
+
+2a)
+MATCH (n)
+RETURN COUNT(n) AS TotalNodes
+
+
+2b)
+MATCH (ta:ThreatActor)-[:LAUNCHED]->(inc:Incident)
+RETURN ta.name AS ThreatActorName, 
+       COUNT(inc) AS IncidentCount
+
+
+2c)
+MATCH (inc:Incident)-[:MITIGATED_BY]->(strat:Strategy)
+RETURN COUNT(DISTINCT strat) AS TotalMitigationStrategies
+
+
+2d)
+MATCH (ta:ThreatActor)-[:LAUNCHED]->(inc:Incident)
+RETURN ta.name AS ThreatActorName, 
+       COUNT(inc) AS IncidentCount
+ORDER BY IncidentCount DESC
+LIMIT 1

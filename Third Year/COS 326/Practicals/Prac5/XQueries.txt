@@ -1,0 +1,70 @@
+Task 1
+Question 1:
+//musician/name/string()
+
+
+Question 2:
+//musician[name = 'Billy Talent']/albums/album
+
+
+Question 3:
+//musician[albums/album = 'Lateralus']/name/string()
+
+
+Question 4:
+//musician[contains(genre, 'Pop')]/name/string()
+
+
+Question 5:
+//musician[@type = 'solo']/name/string()
+
+
+Question 6:
+//musician[@type = 'solo'][2]/(name/string(), genre/string())
+
+
+Question 7:
+//musician[name = 'Ben Folds']/albums/album[4]/string()
+
+
+Question 8:
+//musician/albums/album[@year >= 2008]/string()
+
+
+Task 2
+Question 9:
+for $musician in //musician
+let $years := $musician/albums/album/@year
+let $yearDiff := (max($years) - min($years) + 1)
+let $yearDiff := if ($yearDiff > 0) then ($yearDiff) else 1
+let $rate := $yearDiff div count($years)
+order by $rate
+return (
+  concat($musician/name, ', ', $rate)
+)
+
+Question 10:
+for $musician in //musicians/musician
+let $years := (
+    for $album in $musician/albums/album
+    return $album/@year
+)
+
+let $differences := (
+    for $i in 1 to (count($years) - 1)
+    return $years[$i + 1] - $years[$i]
+)
+let $averageDiff := 
+if (count($differences) > 0) 
+then
+  sum($differences) div count($differences)
+else 
+  count($musician/members/member)
+let $nextRelease := format-number(max($years) + $averageDiff, '0')
+return(
+  concat('Name: ', $musician/name/text()),
+  concat('Expected New Album: ', $nextRelease),
+  ""
+) 
+
+

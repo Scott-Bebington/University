@@ -1,0 +1,43 @@
+# COS 326 Practical 1
+
+## Usage
+1. Compile and Run the Java program in a linux based environment: 
+``` bash
+cd path/to/your/directory
+make all
+```
+
+Example:
+``` bash
+cd "/c/Users/Scott/Documents/University/Third Year/COS 326/Practicals/Prac1"
+make all
+```
+
+2. Compile and Run the Java program in a Windows based environment:
+``` bash
+cd path/to/your/directory
+build.bat
+```
+
+Example:
+``` bash
+cd "C:\Users\Scott\Documents\University\Third Year\COS 326\Practicals\Prac1"
+build.bat
+```
+
+3. Compile and Run the java program using git bash terminal:
+``` bash
+cd path/to/your/directory
+javac -cp objectdb.jar *.java
+java -cp ".:absolute/path/to/your/directory/objectdb.jar" Main
+rm *.class (Optional, to remove the class files)
+```
+
+Example:
+``` bash
+cd "/c/Users/Scott/Documents/University/Third Year/COS 326/Practicals/Prac1"
+javac -cp objectdb.jar *.java
+java -cp ".:/c/Users/Scott/Documents/University/Third Year/COS 326/Practicals/Prac1/objectdb.jar" Main
+rm *.class
+```
+

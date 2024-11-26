@@ -1,0 +1,24 @@
+<store>
+    <category>
+        <name>Electronics</name>
+        <product>
+            <name>Laptop</name>
+            <price>800</price>
+        </product>
+        <product>
+            <name>Smartphone</name>
+            <price>400</price>
+        </product>
+    </category>
+    <category>
+        <name>Clothing</name>
+        <product>
+            <name>T-Shirt</name>
+            <price>20</price>
+        </product>
+        <product>
+            <name>Jeans</name>
+            <price>50</price>
+        </product>
+    </category>
+</store>
